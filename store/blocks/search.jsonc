@@ -213,8 +213,7 @@
           "itemsPerRow": 1
         }
       ],
-      "GridSummary": "product-summary.shelf#default",
-      "ListSummary": "product-summary.shelf#listLayout"
+      "GridSummary": "product-summary.shelf#default"
     }
   },
   "flex-layout.row#searchinfo": {

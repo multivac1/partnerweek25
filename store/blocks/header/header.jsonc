@@ -23,18 +23,10 @@
   "flex-layout.col#menu-container": {
     "children": [
       "flex-layout.row#desktop",
-      "link#icono-ws",
       "flex-layout.row#categories-menu"
     ],
     "props": {
       "blockClass": "header-container"
-    }
-  },
-  "link#icono-ws": {
-    "props": {
-      "href": "https://wa.me/5491124986906",
-      "label": "",
-      "blockClass": "limpi"
     }
   },
   "flex-layout.row#categories-menu": {
@@ -120,8 +112,7 @@
     "children": [
       /*  "flex-layout.row#top-mobile", */
       "sticky-layout#mobile",
-      "flex-layout.row#account",
-      "link#icono-ws"
+      "flex-layout.row#account"
     ]
   },
   "sticky-layout#mobile": {

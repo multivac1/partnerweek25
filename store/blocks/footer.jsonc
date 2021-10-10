@@ -105,7 +105,6 @@
     "children": [
       "rich-text#about-us",
       "link#about-us-1",
-      "link#about-us-2",
       "link#about-us-4",
       "link#about-us-6",
       "link#about-us-7"
@@ -139,13 +138,6 @@
     "props": {
       "href": "",
       "label": "Quiénes somos?",
-      "blockClass": "footerLink"
-    }
-  },
-  "link#about-us-2": {
-    "props": {
-      "href": "",
-      "label": "Limpio Tips",
       "blockClass": "footerLink"
     }
   },
