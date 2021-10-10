@@ -1,0 +1,770 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+.flexRowContent--menu-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include container();
+}
+
+.flexRow--categories-container {
+  background-color: $blue;
+  color: white;
+}
+
+.flexCol--header-container {
+  background-color: white;
+}
+
+.flexRowContent--header-account-cart .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--header-account-cart {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flexRowContent--header-account-cart .stretchChildrenWidth :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.stretchChildrenWidth {
+  height: fit-content;
+}
+
+.flexRow--footerContainer {
+  background: #504f4f;
+  padding: 4rem 6rem;
+  .flexRowContent--footerContainer {
+    @include container();
+  }
+}
+
+.flexRowContent--footerChildContainer .stretchChildrenWidth {
+  margin-right: 2rem;
+  @include respond(phone) {
+    .flexCol {
+      align-items: center;
+      margin: 1rem;
+    }
+  }
+}
+
+.flexRowContent--footerChildContainer .stretchChildrenWidth:last-child {
+  width: 55% !important;
+  margin-right: 0;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  @include respond(phone) {
+    width: 100% !important;
+    padding: 0;
+  }
+}
+
+.flexColChild--compra-protegida-container .flexRowContent {
+  align-items: flex-end;
+  @include respond(phone) {
+    :global(.vtex-store-components-3-x-imageElement) {
+      margin: auto;
+      width: 3rem !important;
+    }
+  }
+}
+
+.flexCol--redes-container {
+  align-items: center;
+}
+
+.flexCol--redes-container :global(.vtex-store-components-3-x-imageElement) {
+  // margin-bottom: 1rem;
+  @include respond(phone) {
+    margin-bottom: 0;
+    // height: 1rem;
+    // width: 2rem !important;
+  }
+}
+
+.flexRowContent--footer-marcas-logos {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(phone) {
+    width: 100%;
+  }
+  padding: 0.4rem 0;
+}
+
+.flexRowContent--footer-marcas-logos .stretchChildrenWidth {
+  margin-right: 1rem;
+  width: 10% !important;
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.flexRowContent--footer-marcas-logos .stretchChildrenWidth:last-child {
+  margin-right: 0;
+}
+
+.flexRowContent--footerCopyrights {
+  background-color: #b3b3b3;
+}
+
+.flexRowContent--newsletter {
+  background: $blue;
+  align-items: center;
+  justify-content: center;
+  @include respond(phone) {
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.flexRow--sliderPromotionalInfo--mobile {
+  display: none;
+  @include respond(phone) {
+    display: block;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    .flexRowContent--sliderPromotionalInfo--mobile {
+      display: flex;
+      .flexCol--promotionalInfoCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 .5rem;
+      }
+    }
+  }
+}
+
+.flexRowContent--sliderPromotionalInfo .stretchChildrenWidth {
+  height: auto;
+
+  @include respond(phone) {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.flexRowContent--sliderPromotionalInfo {
+  justify-content: space-between;
+  background: white;
+  .stretchChildrenWidth:nth-child(2n) {
+    .flexRowContent--promotionalInfoCard {
+      border-left: 1px solid $gray;
+      border-right: 1px solid $gray;
+      @include respond(phone) {
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+}
+
+.flexRowContent--promotionalInfoCard {
+  align-items: center;
+  margin: 0.7rem 0.2rem;
+  padding: 0rem 2rem;
+  @include respond(phone) {
+    padding: 0rem 0.8rem;
+  }
+  .stretchChildrenWidth {
+    &:first-child {
+      width: 30% !important;
+      @include respond(phone) {
+        width: 100% !important;
+      }
+    }
+    &:last-child {
+      width: 70% !important;
+    }
+  }
+}
+
+.flexRow--promotionalInfoCard {
+  display: flex;
+}
+
+.flexRowContent--promotionalInfoCard :global(.vtex-store-components-3-x-imageElementLink) {
+  margin-right: 1.5rem;
+  @include respond(phone) {
+    margin-right: 0;
+    /* display: flex;
+    justify-content: center; */
+  }
+}
+
+.flexRow--sliderPromotionalInfo,
+.flexRow--banner-home,
+.flexRowContent--home-brands {
+  @include container();
+  padding: 2.5rem 0;
+  /*  padding: 2.5rem 8rem; */
+  display: block;
+  box-sizing: border-box;
+  /* width: 100%; */
+  background: $background;
+  @include respond(phone) {
+    padding: 2rem 0 4rem;
+    // background: white;
+  }
+}
+
+.flexRowContent--home-brands {
+  @include respond(phone) {
+    overflow: hidden;
+  }
+}
+
+.flexRowContent--banner-home {
+  justify-content: space-between;
+}
+
+.flexRow--banner-home {
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+
+.flexRow--banner-home .stretchChildrenWidth {
+  width: calc(50% - 0.5em) !important;
+  /* -webkit-box-shadow: 2px 2px 15px -2px rgb(0 0 0 / 9%);
+  -moz-box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.9);
+  box-shadow: 2px 2px 15px -2px rgb;
+  transition: all 300ms; */
+}
+
+.flexRow--banner-home .stretchChildrenWidth:hover {
+  -webkit-box-shadow: 6px 6px 15px -2px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 15px -2px rgb;
+  transition: all 300ms;
+}
+
+.flexRowContent--home-brands :global(.vtex-slider-layout-0-x-sliderLayoutContainer) {
+  background: white;
+  -webkit-box-shadow: 2px 2px 15px -2px rgb(0 0 0 / 5%);
+  -moz-box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 15px -2px rgb;
+  border: 10px;
+  @include respond(phone) {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+
+@include respond(phone) {
+  .flexRow--sliderPromotionalInfo {
+    display: none;
+  }
+  .flexRowContent--promotionalInfoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0;
+  }
+  .flexRowContent--sliderPromotionalInfo {
+    display: flex;
+    background: white;
+  }
+  .flexCol--promotionalInfoCard--descuento {
+    justify-content: center;
+    align-items: center;
+  }
+  .flexRowContent--sliderPromotionalInfo {
+    justify-content: space-between;
+  }
+  .flexRowContent--sliderPromotionalInfo .stretchChildrenWidth {
+    margin: 0;
+    padding: 0.35rem;
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+  .flexRow--banner-home .stretchChildrenWidth {
+    width: 100% !important;
+  }
+  .flexRowContent--promotionalInfoCard .vtex-store-components-3-x-imageElementLink {
+    margin-right: 0;
+  }
+  .flexRow--footerContainer {
+    padding: 2rem 1rem;
+  }
+  .flexColChild--social-medias-container {
+    width: 100%;
+  }
+  .flexColChild--social-medias-container .flexRowContent {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.flexRowContent--shelf-container {
+  flex-direction: column;
+  background-color: $secondary-color;
+  padding: 2.5rem 0;
+  margin: 2rem 0;
+  @include respond(phone) {
+    margin: 3rem 0 1.5rem;
+    padding: 1rem 0 2.5rem 0;
+  }
+}
+
+.flexRow--tab-search {
+  max-width: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+.flexRowContent--footerChildContainer .stretchChildrenWidth .flexCol--social-medias-container {
+  align-items: center;
+  @include respond(phone) {
+    margin: 0;
+  }
+}
+
+.flexRowContent--limpioTips--container {
+  position: relative;
+  width: 100%;
+  /*  @include respond(big-desktop) {
+    width: 70%;
+    margin: auto;
+  } */
+  @include respond(phone) {
+    .flexCol {
+      width: 65%;
+    }
+    .stretchChildrenWidth {
+      justify-content: flex-start;
+    }
+  }
+}
+.flexColChild--limpioTips--col-container {
+  background: $green;
+  .flexRow--limpioTips--container {
+    padding: 1.5rem 0;
+    position: relative;
+    min-height: 30vh;
+    @include container();
+    @include respond(phone) {
+      padding: 1rem;
+      padding-bottom: 2rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.flexColChild--limpioTips--col-container--mobile {
+  background: $blue;
+  position: relative;
+}
+
+.flexRow--limpio-tips-text--mobile {
+  width: 50%;
+  margin: 2rem;
+}
+
+.flexRowContent--limpio-tips-top--mobile {
+  background-color: $green;
+  position: relative;
+}
+
+.flexCol--limpioTips--col-container--mobile {
+  display: none;
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.flexRow--limpio-tips-top--mobile {
+}
+
+.flexCol--limpioTips--col-container {
+  margin: 8rem 0 0rem;
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .flexRowContent--main-header-mobile {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0 1rem;
+  }
+  .flexRowContent--main-header-left,
+  .flexRowContent--main-header-right {
+    align-items: center;
+    //padding: 0 1rem;
+  }
+  .flexRowContent--main-header-right {
+    justify-content: flex-end;
+  }
+  .flexRowContent--header--mobileAccount {
+    background: $blue;
+    color: white;
+    padding: 0.5rem 0;
+  }
+}
+
+.flexRow--suscribe-banners-home {
+  @include container();
+  margin-bottom: 2rem;
+}
+
+.flexRow--home-brands {
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
+}
+
+.flexCol--suscribe-banners-left {
+  width: 35%;
+  justify-content: space-between;
+}
+
+.flexColChild--suscribe-banners-left:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.flexRowContent--suscribe-banners-home {
+  /*   height: 50vh; */
+  .stretchChildrenWidth {
+    width: 100% !important;
+    height: initial;
+    //height: 60vh;
+  }
+  .stretchChildrenWidth:first-child {
+    width: 47% !important;
+    @include respond(phone) {
+      width: 100% !important;
+    }
+  }
+}
+
+.flexRow--product-page {
+  @include container();
+  padding-top: 0.75rem;
+  margin-top: 0;
+  padding-bottom: 0;
+  @include respond(phone) {
+    padding: 0;
+  }
+  .flexRowContent--product-page {
+    .flexCol--product-page-icons-border {
+      border-right: 1px solid $gray;
+      border-left: 1px solid $gray;
+    }
+    .stretchChildrenWidth:nth-child(2n) {
+      display: flex;
+      justify-content: flex-end;
+      padding-left: 2rem;
+      @include respond(phone) {
+        padding-left: 0;
+      }
+    }
+  }
+  .flexRowContent--productContainer {
+    background-color: white;
+    padding: 2rem;
+    margin: 0;
+    @include respond(phone) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.flexRow--product-details {
+  @include container();
+}
+
+.flexCol--product-details--container {
+  background-color: white;
+  padding: 2rem 3rem;
+}
+
+.flexColChild--productInfo:first-child {
+  display: flex;
+  justify-content: flex-end;
+  :global(.vtex-product-identifier-0-x-product-identifier--productReference) {
+    color: #b3b3b3;
+  }
+  @include respond(phone) {
+    justify-content: flex-start;
+  }
+}
+
+.flexCol--productInfo {
+  :global(.vtex-reviews-and-ratings-2-x-star) {
+    font-size: 2rem;
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+  .flexColChild--productInfo {
+    margin: 0.5rem 0;
+  }
+}
+
+@include respond(phone) {
+  .flexRow--product-icons {
+    display: none;
+  }
+}
+
+.flexRowContent--product-icons {
+  margin-top: 2rem;
+  align-items: center;
+  .stretchChildrenWidth {
+    padding-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flexCol--product-page-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.flexRowContent--searchInfo {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.flexCol--search-gallery--content {
+  padding-left: 2rem;
+  @include respond(phone) {
+    padding-left: 0;
+  }
+}
+
+.flexRow--result--container {
+  @include container();
+  margin-top: 0;
+  @include respond(phone){
+    padding-top: 0;
+  }
+}
+
+.flexRowContent--PrecioProducto {
+  align-items: flex-start;
+}
+
+.flexRow--breadcrumb {
+  @include container();
+  .flexRowContent--breadcrumb {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.flexRowContent--marcas-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3rem 1rem;
+  justify-content: center;
+  align-items: center;
+  @include container();
+  padding: 3rem;
+  background-color: white;
+  .stretchChildrenWidth {
+    width: 100% !important;
+    .flexCol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+    }
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(3, 1fr);
+    :global(.vtex-store-components-3-x-imageElement) {
+      width: 4rem !important;
+    }
+  }
+}
+
+.flexRow--landing-row--container {
+  @include container();
+  // padding: 5rem 0;
+}
+
+.flexRowContent--landing-row--container {
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.flexColChild--landing-row--col {
+  margin: 2rem 0;
+}
+
+.flexCol--landing-row--container {
+  @include container();
+}
+
+.flexColChild--faq--col {
+  margin: 1rem 0;
+}
+
+.flexCol--envios-col {
+  .flexColChild--envios-col {
+    min-height: 5rem !important;
+  }
+}
+
+.flexRowContent--terminos--col {
+  .stretchChildrenWidth {
+    margin: 0 2rem;
+  }
+}
+
+.flexCol--envios-important {
+  background-color: $green;
+  padding: 2rem 3rem;
+}
+
+.flexCol--devolucion-important {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.flexCol--search-list-info {
+  margin: 1rem;
+  margin-right: 5rem;
+  :global(.vtex-product-summary-2-x-nameContainer) {
+    padding: 0;
+    text-align: left;
+    justify-content: left;
+  }
+  :global(.vtex-reviews-and-ratings-2-x-inlineContainer) {
+    display: flex;
+  }
+}
+
+.flexRowContent--gallery-listLayout {
+  justify-content: space-between;
+  .stretchChildrenWidth:first-child {
+    width: 9rem !important;
+  }
+  .stretchChildrenWidth:nth-child(2n) {
+    width: 50% !important;
+  }
+  :global(.vtex-store-components-3-x-currencyContainer) {
+    font-size: 1.8rem;
+  }
+  @include respond(phone) {
+    .stretchChildrenWidth:first-child {
+      width: 100% !important;
+    }
+    .stretchChildrenWidth:nth-child(2n) {
+      width: 100% !important;
+    }
+  }
+}
+
+.flexRow--gallery-listLayout {
+  :global(.vtex-product-summary-2-x-image) {
+    max-height: 13rem;
+  }
+}
+
+.flexRow--limpio-tips-container {
+  background: white;
+}
+
+.flexRow--limpio-tips-item {
+  @include container();
+}
+
+.flexRowContent--limpio-tips-row-container {
+  @include container();
+  padding-top: 4rem;
+  .flexColChild--limpio-tips-item {
+    width: 100%;
+    &:last-child {
+      justify-content: flex-end;
+      display: flex;
+    }
+  }
+  .stretchChildrenWidth {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $blue;
+    padding-bottom: 1rem;
+  }
+  .stretchChildrenWidth:last-child {
+    margin-right: 0;
+  }
+  @include respond(phone) {
+    padding: 1rem .8rem;
+  }
+}
+
+.flexRow--contacto--container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 0;
+
+  :global(.vtex-input),
+  :global(.vtex-textarea) {
+    display: flex;
+    margin: 1.5rem 0;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+  :global(.vtex-textarea__input),
+  :global(.vtex-styleguide-9-x-input) {
+    border: 1px solid $darkGray;
+    &::placeholder {
+      color: gray;
+    }
+  }
+  :global(.vtex-input-prefix__group) {
+    border: none;
+  }
+  :global(.vtex-input__label),
+  :global(.vtex-textarea__label) {
+    width: 25%;
+    margin: 0.3rem 0;
+    color: $darkGray;
+    font-family: $regular;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    @include respond(phone) {
+      margin: 0.5rem 0;
+    }
+  }
+  :global(.vtex-input-prefix__group) {
+    width: 100%;
+  }
+  :global(.vtex-button__label) {
+    padding: 1rem 4rem;
+    font-family: $regular;
+  }
+
+  @include respond(phone) {
+    margin: 0 1rem;
+  }
+}
+
+/*Icono ws*/

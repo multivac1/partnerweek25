@@ -1,0 +1,50 @@
+:global(.vtex-flex-layout-0-x-flexColChild--terminos--col) .trigger {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #006DB6;
+  position: relative;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--terminos--col) .trigger :global(.vtex-rich-text-0-x-wrapper--disclosure-text) :global(.vtex-rich-text-0-x-heading--disclosure-text) {
+  margin: 1.2rem 0;
+  color: #006DB6;
+}
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexColChild--terminos--col) .trigger :global(.vtex-rich-text-0-x-wrapper--disclosure-text) :global(.vtex-rich-text-0-x-heading--disclosure-text) {
+    font-size: 0.8rem;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--terminos--col) .trigger--hidden::after {
+  position: absolute;
+  top: 37%;
+  bottom: 53%;
+  right: 2px;
+  content: "";
+  border-right: 2px solid #006DB6;
+  border-bottom: 2px solid #006DB6;
+  width: 8px;
+  transform: rotate(45deg);
+  height: 8px;
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--terminos--col) .trigger--visible::after {
+  position: absolute;
+  top: 37%;
+  bottom: 53%;
+  right: 2px;
+  content: "";
+  border-right: 2px solid #006DB6;
+  border-bottom: 2px solid #006DB6;
+  width: 8px;
+  transform: rotate(-135deg);
+  height: 8px;
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--terminos--col):last-child {
+  border-bottom: 1px solid #006DB6;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--terminos--col) .content :global(.vtex-rich-text-0-x-paragraph) {
+  padding: 0 0.5rem 0 1.5rem;
+}

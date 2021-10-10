@@ -1,0 +1,33 @@
+.newsletterForm {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .newsletterForm {
+    display: flex;
+    justify-content: center;
+  }
+  .newsletterForm :global(.vtex-button__label) {
+    padding: 0.5rem !important;
+  }
+}
+.newsletterForm :global(.vtex-button) {
+  background: #f15a24;
+  border: 1px solid #e9472a;
+  font-family: "Nunito-Black";
+  font-size: 0.9rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  .newsletterForm :global(.vtex-button) {
+    font-size: 0.7rem;
+  }
+}
+
+.newsletterForm :global(.vtex-input-prefix__group) {
+  border: 1px solid white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: white;
+}

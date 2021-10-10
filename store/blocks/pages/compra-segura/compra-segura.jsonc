@@ -1,0 +1,47 @@
+{
+    "store.custom#compra-segura": {
+        "blocks": [
+            "list-context.image-list#home",
+            "flex-layout.row#compra-segura--container",
+            "flex-layout.row#newsletter"
+        ]
+    },
+    "flex-layout.row#compra-segura--container": {
+        "children": [
+            "flex-layout.col#compra-segura--container"
+        ],
+        "props": {
+            "blockClass": "landing-row--container"
+        }
+    },
+    "flex-layout.col#compra-segura--container": {
+        "children": [
+            "rich-text#quienes-somos-title",
+            "rich-text#quienes-somos-subtitle",
+            "image#compra-segura"
+        ],
+        "props":{
+            "horizontalAlign": "center"
+        }
+    },
+    "rich-text#quienes-somos-title": {
+        "props": {
+            "text": "Compra Segura",
+            "font": "t-heading-1",
+            "blockClass": "landing-row--title"
+        }
+    },
+    "rich-text#quienes-somos-subtitle": {
+        "props": {
+            "text": "Nuestro sitio opera directamente con la plataforma de Mercado Pago, para la seguridad de nuestros clientes la plataforma brinda el programa Compra Protegida, la cual tiene como objeto otorgar una cobertura a todos aquellos compradores que cumplan con la totalidad de los requisitos detallados dentro de Mercado Pago \n Para más información puede consultar directamente en: [https://www.mercadopago.com.ar/ayuda/Compra-Protegida_601](https://www.mercadopago.com.ar/ayuda/Compra-Protegida_601)",
+            "blockClass": "landing-row--subtitle"
+        }
+    },
+    "image#compra-segura": {
+        "props": {
+            "src": "/",
+            "width": "70%",
+            "blockClass": "compra-segura"
+        }
+    }
+}

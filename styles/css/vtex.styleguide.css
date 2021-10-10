@@ -1,0 +1,12 @@
+.input {
+  font-family: "Nunito-Regular";
+}
+
+.input::placeholder {
+  color: rgba(49, 49, 49, 0.823);
+  font-size: 0.9rem;
+}
+
+.input {
+  background-color: transparent;
+}

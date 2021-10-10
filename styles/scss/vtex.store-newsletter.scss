@@ -1,0 +1,33 @@
+@import "./utils/variables.scss";
+@import "./utils/responsive.scss";
+
+.newsletterForm {
+  display: flex;
+  @include respond(phone) {
+    display: flex;
+    justify-content: center;
+    :global(.vtex-button__label) {
+      padding: 0.5rem !important;
+    }
+  }
+
+  :global(.vtex-button) {
+    background: #f15a24;
+    border: 1px solid rgb(233, 71, 42);
+    font-family: $black;
+    font-size: 0.9rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: uppercase;
+    @include respond(phone) {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.newsletterForm :global(.vtex-input-prefix__group) {
+  border: 1px solid white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: white;
+}

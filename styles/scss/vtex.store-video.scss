@@ -1,0 +1,13 @@
+@import "./utils/responsive.scss";
+
+.videoContainer--video-home {
+  padding: 0 0.5rem;
+  height: 100%;
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+.videoElement--video-home {
+  // height: 60vh;
+  height: 100%;
+}

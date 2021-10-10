@@ -1,0 +1,204 @@
+@media only screen and (max-width: 600px) {
+  .paginationDotsContainer {
+    margin-bottom: 0;
+    bottom: -1.5rem;
+  }
+}
+
+.paginationDot {
+  width: 0.9rem !important;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 0;
+  border: 0.5px solid rgba(182, 182, 182, 0.658);
+  transition: 300ms all;
+}
+
+.paginationDotsContainer--slider-brands {
+  bottom: -2rem;
+  margin-bottom: 0;
+}
+
+.paginationDot--isActive {
+  background-color: #006DB6;
+  width: 1.1rem !important;
+  transition: 300ms all;
+}
+
+.paginationDot--shelf-container,
+.paginationDot--sliderHomeMarcas {
+  background-color: #808184;
+}
+
+.paginationDot--shelf-container--isActive,
+.paginationDot--sliderHomeMarcas--isActive {
+  background-color: #000;
+}
+
+.sliderTrackContainer--shelf-container {
+  margin-bottom: 2rem;
+}
+
+.sliderLayoutContainer--sliderPromotionalInfo {
+  padding: 1.25rem 0.5rem;
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+.sliderLayoutContainer--shelf-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.slideChildrenContainer--shelf-container {
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.sliderLayoutContainer--sliderHomeMarcas {
+  margin: 2rem 0 4rem;
+}
+
+.paginationDotsContainer--sliderHomeMarcas {
+  bottom: -45%;
+}
+
+.sliderTrackContainer--sliderHomeMarcas {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.slideChildrenContainer--sliderHomeMarcas {
+  width: 75%;
+}
+
+.slide--shelf-container :global(.vtex-store-components-3-x-sellingPrice) {
+  color: #808184;
+}
+
+.slide--shelf-container {
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 720px) {
+  .slideChildrenContainer--shelf-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .paginationDotsContainer--sliderHomeMarcas {
+    bottom: -85%;
+    flex-wrap: wrap;
+  }
+
+  .paginationDot--sliderHomeMarcas {
+    margin: 0.5rem 0.25rem;
+  }
+
+  .sliderLayoutContainer--shelf-container {
+    padding: 0 1.5rem;
+  }
+
+  .slide--sliderHomeMarcas {
+    justify-content: center;
+  }
+
+  .paginationDotsContainer--shelf-container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sliderTrackContainer--shelf-default {
+    margin: 0;
+  }
+}
+
+.sliderContainer--related-product-page .sliderFrame {
+  justify-content: space-between;
+}
+
+.slide--shelf-default {
+  margin: 0 0.3rem;
+}
+@media only screen and (max-width: 600px) {
+  .slide--shelf-default {
+    margin: 0 0.25% !important;
+    width: 40% !important;
+  }
+}
+
+.sliderRightArrow--shelf-default {
+  right: -3rem;
+}
+
+.sliderLeftArrow--shelf-default {
+  left: -3rem;
+}
+
+.sliderLayoutContainer--shelf-limpio-tips {
+  transform: translateY(2rem);
+  position: absolute;
+  bottom: 0;
+  width: fit-content !important;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .sliderLayoutContainer--shelf-limpio-tips {
+    position: static;
+    transform: translateY(1rem);
+    width: 90% !important;
+    margin: auto;
+  }
+}
+
+.sliderTrack--shelf-limpio-tips {
+  height: 100%;
+}
+
+.sliderTrackContainer--shelf-limpio-tips {
+  width: fit-content !important;
+  height: 100%;
+}
+.sliderTrackContainer--shelf-limpio-tips .slide--hidden {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .sliderTrackContainer--shelf-limpio-tips {
+    transform: translateY(-1.8rem);
+  }
+}
+
+/* .sliderArrows--shelf-default.sliderLeftArrow {
+  margin-left: 5rem;
+}
+
+.sliderArrows--shelf-default.sliderLeftArrow {
+  margin-right: 5rem;
+} */
+.sliderTrackContainer--slider-brands {
+  padding: 1rem 0;
+}
+
+.sliderLayoutContainer--shelf-default {
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  /*  @include respond(phone) {
+     margin-left: 0.7rem;
+   } */
+}
+@media only screen and (max-width: 600px) {
+  .sliderLayoutContainer--shelf-default {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.slideChildrenContainer--slider-brands {
+  margin: 0 1rem;
+  /*  :global(.vtex-store-components-3-x-imageElement){
+     margin: 0 1rem;
+   } */
+}

@@ -1,0 +1,64 @@
+.homeLink::after {
+  content: "Inicio";
+}
+
+.arrow,
+.link,
+.homeLink::after,
+.term,
+.termArrow {
+  color: #006DB6;
+  font-size: 0.9rem;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.container--breadcrumb--search {
+  display: flex;
+  padding: 0;
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .container--breadcrumb--search {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.container--breadcrumb--search .link--breadcrumb--search {
+  padding: 0;
+}
+.container--breadcrumb--search .arrow,
+.container--breadcrumb--search .link,
+.container--breadcrumb--search .homeLink::after,
+.container--breadcrumb--search .term,
+.container--breadcrumb--search .termArrow {
+  color: #006DB6;
+  font-family: "Nunito-Regular";
+  font-size: 0.8rem;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container--breadcrumb--search .caretIcon {
+  margin: 0 0.7rem;
+  width: 0.4rem;
+}
+.container--breadcrumb--search .arrow {
+  padding: 0;
+}

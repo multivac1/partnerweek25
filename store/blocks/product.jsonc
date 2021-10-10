@@ -1,7 +1,311 @@
 {
   "store.product": {
     "children": [
-      
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#main",
+      "flex-layout.row#details",
+      "shelf.relatedProducts",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": [
+      "breadcrumb"
+    ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": [
+        "productContainer",
+        "product-page"
+      ]
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "stack-layout#brand"
+    ],
+    "props": {
+      "width": "59%"
+    }
+  },
+  "stack-layout#brand": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "thumbnailsOrientation": "vertical",
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailAspectRatio": "90:90"
+    }
+  },
+  "product-brand": {
+    "props": {
+      "height": 60,
+      "displayMode": "logo"
+    }
+  },
+  "flex-layout.col#right": {
+    "children": [
+      "product-identifier.product",
+      "product-brand",
+      "product-name",
+      "product-rating-inline",
+      "flex-layout.row#product-price",
+      "sku-selector",
+      "product-quantity",
+      "add-to-cart-button#product",
+      "flex-layout.row#icons"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "blockClass": "productInfo"
+    }
+  },
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#product-price": {
+    "children": [
+      "product-price",
+      "product-price-savings"
+    ],
+    "props": {
+      "blockClass": [
+        "PrecioProducto"
+      ],
+      "preventHorizontalStretch": true
+    }
+  },
+  "product-price": {
+    "props": {
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showListPriceRange": true,
+      "labelListPrice": "Antes:"
+    }
+  },
+  "product-price-savings": {
+    "props": {
+      "markers": [
+        "highlight"
+      ],
+      "blockClass": [
+        "discount"
+      ],
+      "message": "-{savingsPercentage}"
+    }
+  },
+  "product-identifier.product": {
+    "props": {
+      "label": "custom",
+      "customLabel": "SKU",
+      "blockClass": "test"
+    }
+  },
+  "add-to-cart-button#product": {
+    "props": {
+      "text": "Agregar al carrito"
+    }
+  },
+  "sku-selector": {
+    "props": {
+      "visibility": "more-than-one",
+      "initialSelection": "complete",
+      "showValueNameForImageVariation": true,
+      "showVariationsErrorMessage": true,
+      "imageWidth": "20px",
+      "imageHeight": "20px",
+      "showValueForVariation": "none",
+      "visibleVariations": [
+        "color"
+      ]
+    }
+  },
+  "flex-layout.row#icons": {
+    "props": {
+      "blockClass": "product-icons"
+    },
+    "children": [
+      "flex-layout.col#icons-1",
+      "flex-layout.col#icons-2",
+      "flex-layout.col#icons-3"
+    ]
+  },
+  "flex-layout.col#icons-1": {
+    "children": [
+      "image#product-icon-1",
+      "rich-text#icons-1"
+    ],
+    "props": {
+      "blockClass": "product-page-icons"
+    }
+  },
+  "flex-layout.col#icons-2": {
+    "children": [
+      "image#product-icon-2",
+      "rich-text#icons-2"
+    ],
+    "props": {
+      "blockClass": ["product-page-icons", "product-page-icons-border"]
+    }
+  },
+  "flex-layout.col#icons-3": {
+    "children": [
+      "image#product-icon-3",
+      "rich-text#icons-3"
+    ],
+    "props": {
+      "blockClass": "product-page-icons"
+    }
+  },
+  "rich-text#icons-1": {
+    "props": {
+      "text": "Ver costos de envío ›",
+      "blockClass": "product-page-icons"
+    }
+  },
+  "image#product-icon-1": {
+    "props": {
+      "width": "3rem",
+      "src": "https://limpioonline.vteximg.com.br/arquivos/envios.png",
+      "link": "#"
+    }
+  },
+  "rich-text#icons-2": {
+    "props": {
+      "text": "Ver medios de pago ›",
+      "blockClass": "product-page-icons"
+    }
+  },
+  "image#product-icon-2": {
+    "props": {
+      "width": "3rem",
+      "src": "https://limpioonline.vteximg.com.br/arquivos/pagos.png",
+      "link": "#"
+    }
+  },
+  "rich-text#icons-3": {
+    "props": {
+      "text": "5% de descuento fijo comprobable",
+      "blockClass": "product-page-icons"
+    }
+  },
+  "image#product-icon-3": {
+    "props": {
+      "width": "3rem",
+      "src": "https://limpioonline.vteximg.com.br/arquivos/descuentos.png",
+      "link": "#"
+    }
+  },
+  "flex-layout.row#details": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "product-details"
+    },
+    "children": [
+      "flex-layout.col#details-container"
+    ]
+  },
+  "flex-layout.col#details-container": {
+    "children": [
+      "product-description", /* "menu-item#description", */
+      "flex-layout.col#opinions"
+    ],
+    "props": {
+      "blockClass": "product-details--container"
+    }
+  },
+  /*  "menu-item#description": {
+    "blocks": ["submenu.accordion.product-page#description"],
+    "props": {
+      "id": "description",
+      "blockClass": ["product-page-menu-item", "product-page-description"],
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "type": "internal",
+        "tagTitle": "Descripción",
+        "text": "Descripción"
+      }
+    }
+  }, */
+  "submenu.accordion.product-page#description": {
+    "children": [
+      "product-description"
+    ]
+  },
+  "product-description": {
+    "props": {
+      "title": " "
+    }
+  },
+  "menu-item#product-rating": {
+    "blocks": [
+      "submenu.accordion.product-page#product-rating"
+    ],
+    "props": {
+      "id": "test",
+      "blockClass": "product-page-menu-item",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "tagTitle": "Opiniones",
+        "text": "Opiniones"
+      }
+    }
+  },
+  "submenu.accordion.product-page#product-rating": {
+    "children": [
+      "product-reviews"
+    ]
+  },
+  "flex-layout.col#opinions": {
+    "children": [
+      "rich-text#opinions",
+      "product-reviews"
+    ]
+  },
+  "rich-text#opinions": {
+    "props": {
+      "text": "Opiniones",
+      "font": "t-heading-4",
+      "blockClass": "opinions"
+    }
+  },
+  "product-reviews": {
+    "props": {
+      "showForm": true,
+      "defaultOpen": true
+    }
+  },
+  "shelf.relatedProducts": {
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "titleText": "Quienes compraron este producto también se interesaron en:",
+        "itemsPerPage": 5
+      },
+      "hideUnavailableItems": true,
+      "blockClass": "related-product-page"
+    },
+    "blocks": [
+      "product-summary.shelf#default"
     ]
   }
 }

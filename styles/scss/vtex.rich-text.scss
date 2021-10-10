@@ -1,0 +1,456 @@
+@import "./utils/variables.scss";
+@import "./utils/responsive.scss";
+@import "./utils/mixins.scss";
+
+.paragraph {
+  font-family: $regular;
+}
+
+.paragraph--footerTitle {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.wrapper--footerLink .paragraph {
+  color: white;
+}
+
+.paragraph--compra-protegida {
+  color: white;
+  font-family: $regular;
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.2;
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.paragraph--footerTitle {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.paragraph--redes-sociales-title {
+  font-size: 0.85rem;
+  font-family: $regular;
+  margin-bottom: 0.3rem;
+  margin-top: 1.5rem;
+}
+
+.container--newsletterText {
+  @include respond(phone) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.paragraph--newsletterText {
+  color: white;
+  margin-right: 3rem;
+  font-family: $semiBold;
+  @include respond(phone) {
+    margin-right: 0;
+    margin-top: 0;
+    line-height: 1;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+.paragraph--footerCopyrightsText {
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: $regular;
+  margin: 0.3rem;
+  @include respond(phone) {
+    padding: 0.4rem 2rem;
+  }
+}
+
+.paragraph--promotionalCardText {
+  font-size: 0.9rem;
+  font-family: $semiBold;
+  color: $darkGray;
+  margin: 0;
+  line-height: 1.1;
+  padding-left: .4rem;
+  @include respond(phone) {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
+.paragraph--titleCard {
+  color: $blue;
+  font-size: 0.9rem;
+  font-family: $regular;
+  margin: 0;
+  line-height: 1.2;
+  padding-left: .4rem;
+  @include respond(phone) {
+    text-align: center;
+    font-size: 0.65rem;
+  }
+}
+
+.container--shelf-title {
+  @include container();
+  padding-bottom: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.strong--shelf-title {
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+  @include respond(sm) {
+    font-size: 1rem;
+  }
+}
+
+.paragraph--shelf-title {
+  margin: 0;
+  @include respond(phone) {
+    line-height: 1;
+  }
+}
+
+.container--promotionalCardText {
+  width: 85%;
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+@include respond(phone) {
+  .paragraph--home-brands-title {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+  }
+}
+
+.wrapper--limpioTips--paragraph {
+  width: 85%;
+  .paragraph {
+    color: white;
+    line-height: 1rem;
+    font-family: $semiBold;
+  }
+}
+
+.container--limpio-tips-text-bajada {
+  background: $blue;
+  color: white;
+  // padding: 0 8rem;
+  .wrapper--limpio-tips-text-bajada {
+    @include containerSides();
+  }
+  @include respond(phone) {
+    padding: 1rem;
+    .paragraph--limpio-tips-text-bajada {
+      margin: 0 1rem;
+      line-height: 1.2;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+.paragraph--limpioTips--paragraph {
+  margin-bottom: 0;
+  @include respond(phone) {
+    font-size: 0.8rem;
+  }
+}
+
+.container--home-brands-title {
+  justify-content: center;
+}
+
+.wrapper--product-page-icons {
+  .paragraph {
+    margin: 0;
+    color: $blue;
+    line-height: 1;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.wrapper--opinions {
+  .paragraph {
+    font-family: $bold;
+    margin: 3rem 0 0;
+  }
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper--filter-navigator--title {
+  background: $blue;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0.5rem 0;
+  .paragraph--filter-navigator--title {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: $bold;
+  }
+}
+
+.container--breadcrumb-limpio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph--breadcrumb-marcas {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: "›";
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    top: -1px;
+  }
+}
+
+.paragraph--breadcrumb {
+  color: $blue;
+  text-transform: capitalize;
+}
+.paragraph--breadcrumb {
+  color: $blue;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-family: "Nunito-Regular";
+}
+
+.link--brands {
+  color: $blue;
+  text-transform: uppercase;
+  font-family: $bold;
+  font-size: 0.85rem;
+}
+
+.paragraph--brands {
+  margin-top: 0.5rem;
+}
+
+.paragraph--landing-row--title {
+  color: $blue;
+  font-family: $bold;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.paragraph--landing-row-detalle {
+  margin: 0;
+  margin-top: 0.4rem;
+  line-height: 1;
+}
+
+.container--landing-row-detalle {
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.container--landing-row--title {
+  justify-content: center;
+  font-size: 1.6rem;
+ /*  @include respond(phone) {
+    justify-content: flex-start;
+  } */
+}
+
+.headingLevel4--landing-row-detalle {
+  margin: 0;
+}
+
+.paragraph--landing-row--bajada {
+  font-size: 0.8rem;
+  margin-top: 4rem;
+  color: $blue;
+  text-align: center;
+}
+
+.headingLevel4--faq,
+.headingLevel4--terminos {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: $bold;
+  color: $blue;
+}
+
+.headingLevel4--terminos {
+  font-size: 1rem;
+}
+
+.paragraph--faq,
+.paragraph--terminos {
+  margin: 0.2rem;
+}
+
+.headingLevel6--faq,
+.headingLevel6--terminos {
+  margin: 0;
+  font-size: 1rem;
+  margin: 0;
+}
+.headingLevel5--faq,
+.headingLevel5--terminos {
+  margin: 0;
+  font-family: $black;
+  font-size: 1rem;
+}
+
+.link--faq,
+.link--terminos {
+  font-family: $bold;
+}
+
+.paragraph--landing-row--title {
+  padding: 1rem 0;
+}
+
+.container--terminos {
+  margin: 0.7rem 0;
+}
+
+.headingLevel2--envios-text {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  border-top: 1px solid $blue;
+  padding: 1rem;
+  margin: 0;
+}
+
+.paragraph--envios-text {
+  text-align: center;
+}
+
+.paragraph--landing-row--title {
+  margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.8rem;
+  }
+}
+
+.link--envios-text {
+  color: $blue;
+}
+
+.headingLevel5--envios-important,
+.paragraph--envios-important {
+  margin: 0;
+  color: white;
+}
+
+.paragraph--envios-important {
+  font-size: 0.9rem;
+  font-family: $regular;
+}
+
+.paragraph--devolucion-title2 {
+  margin-top: 3rem;
+}
+
+.paragraph--limpio-tips-subtitle {
+  margin: 0;
+  margin-top: 1rem;
+  color: $blue;
+  font-size: 1rem;
+  font-family: $bold;
+}
+
+.paragraph--limpio-tips-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: $black;
+}
+
+.paragraph--limpio-tips-paragraph {
+  line-height: 1.3;
+  font-family: $semiBold;
+}
+
+.paragraph--contact--title, .paragraph--contact--subtitle{
+  margin-bottom: 0;
+  margin-top: 0rem;
+  text-align: center;
+}
+
+.paragraph--contact--subtitle{
+  margin-bottom: 2rem;
+}
+
+.paragraph--contact--bajada{
+  font-size: .8rem;
+  margin: 4rem 0;
+}
+
+/*boton ver mas limpio tips*/
+.container--limpio-ver-mas{
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  bottom: -10%;
+  width: auto !important;
+  .wrapper--limpio-ver-mas{
+    background-color: #006DB6;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    .paragraph--limpio-ver-mas{
+      margin: 0;
+      .link--limpio-ver-mas{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    top: unset;
+    bottom: 20%;
+    left: 10%;
+    right: 50%;
+    .wrapper--limpio-ver-mas{
+      background-color: #006DB6;
+      width:120px;
+      text-align: center;
+      border-radius: 5px;
+      .paragraph--limpio-ver-mas{
+        .link--limpio-ver-mas{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,42 @@
+.tileListList{
+    flex-direction: column !important;
+
+    & :global(.vtex-product-summary-2-x-clearLink){
+        flex-direction: row;
+        & :global(.vtex-product-summary-2-x-element){
+            flex-direction: row;
+            width: 100% !important;
+            & :global(.vtex-product-summary-2-x-imageContainer){
+                align-self: center;
+                flex: 0 0 calc(30% - 0px);
+                & :global(.vtex-product-summary-2-x-imageNormal){
+                    max-height: 80px;
+                }
+            }
+
+            & :global(.vtex-product-summary-2-x-information){
+                flex: 0 0 calc(70% - 0px);
+                text-align: initial;
+                & :global(.vtex-product-summary-2-x-nameContainer){
+                    justify-content: flex-start !important;
+                }
+            }
+
+            & :global(.vtex-product-summary-2-x-priceContainer){
+                align-items: flex-start;
+                & :global(.vtex-product-summary-2-x-price_installmentContainer){
+                    display: none;
+                }
+            }
+        }
+        & :global(.vtex-product-summary-2-x-buyButtonContainer){
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .biggy-autocomplete-wrapper{
+        width: 75vw !important;
+    }
+}

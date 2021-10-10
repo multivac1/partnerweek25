@@ -1,0 +1,46 @@
+.groupContainer{
+    align-items: flex-end;
+    .badgeContainer{
+        width: 80%;
+        background-color: red;
+        border-radius: 5px;
+        padding: .2rem;
+        .badgeText{
+            color: #fff;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.groupContainer--destacados-ficha{
+    position: absolute;
+    left: 0;
+    right: 0;
+    align-items: flex-start;
+
+    .badgeContainer--destacados-ficha{
+        width: auto;
+        padding: .3rem;
+        .badgeText--destacados-ficha{
+            font-size: .8rem;
+
+            @media (max-width: 768px){
+                font-size: .7rem;
+            }
+        }
+    }
+
+    .badgeContainer--destacados-ficha--promo{
+        background-color: #BCD85F;
+    }
+    .badgeContainer--destacados-ficha--oferta{
+        background-color: #0071BD;
+    }
+    .badgeContainer--destacados-ficha--nuevo{
+        background-color: #2A9ED9;
+    }
+    .badgeContainer--destacados-ficha--mas-vendidos{
+        background-color: #F68220;
+    }
+}

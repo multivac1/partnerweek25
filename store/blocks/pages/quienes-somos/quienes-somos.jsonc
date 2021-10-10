@@ -1,0 +1,112 @@
+{
+    "store.custom#quienes-somos": {
+        "blocks": [
+            "list-context.image-list#home",
+            "flex-layout.row#quienes-somos--container",
+            "flex-layout.row#newsletter"
+        ]
+    },
+    "flex-layout.row#quienes-somos--container": {
+        "children": [
+            "flex-layout.col#quienes-somos"
+        ],
+        "props": {
+            "blockClass": "landing-row--container"
+        }
+    },
+    "flex-layout.col#quienes-somos": {
+        "children": [
+            "rich-text#quienes-somos-title",
+            "flex-layout.col#quienes-somos--col"
+        ]
+    },
+    "rich-text#quienes-somos-title": {
+        "props": {
+            "text": "Acerca de Limpio Online",
+            "font": "t-heading-1",
+            "blockClass": "landing-row--title"
+        }
+    },
+    "flex-layout.col#quienes-somos--col": {
+        "children": [
+            "flex-layout.row#quienes-somos-detalle-1",
+            "flex-layout.row#quienes-somos-detalle-2",
+            "flex-layout.row#quienes-somos-detalle-3"
+        ],
+        "props": {
+            "blockClass": "landing-row--col"
+        }
+    },
+    "flex-layout.row#quienes-somos-detalle-1": {
+        "children": [
+            "image#quienes-somos-detalle-1",
+            "rich-text#quienes-somos-detalle-1"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#quienes-somos-detalle-1": {
+        "props": {
+            "src": "/",
+            "alt": "quienes somos",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#quienes-somos-detalle-1": {
+        "props": {
+            "text": "Limpionline.com® es una tienda online que provee productos de limpieza y artículos de almacenamiento y organización para el hogar, ofreciéndote alternativas económicas, accesibles y de la mejor calidad, convirtiéndonos en uno de los principales distribuidores del país.",
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "flex-layout.row#quienes-somos-detalle-2": {
+        "children": [
+            "image#quienes-somos-detalle-2",
+            "rich-text#quienes-somos-detalle-2"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#quienes-somos-detalle-2": {
+        "props": {
+            "src": "/",
+            "alt": "quienes somos",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#quienes-somos-detalle-2": {
+        "props": {
+            "text": "Limpionline.com® es una tienda online que provee productos de limpieza y artículos de almacenamiento y organización para el hogar, ofreciéndote alternativas económicas, accesibles y de la mejor calidad, convirtiéndonos en uno de los principales distribuidores del país.",
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "flex-layout.row#quienes-somos-detalle-3": {
+        "children": [
+            "image#quienes-somos-detalle-3",
+            "rich-text#quienes-somos-detalle-3"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#quienes-somos-detalle-3": {
+        "props": {
+            "src": "/",
+            "alt": "quienes somos",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#quienes-somos-detalle-3": {
+        "props": {
+            "text": "Limpionline.com® es una tienda online que provee productos de limpieza y artículos de almacenamiento y organización para el hogar, ofreciéndote alternativas económicas, accesibles y de la mejor calidad, convirtiéndonos en uno de los principales distribuidores del país.",
+            "blockClass": "landing-row-detalle"
+        }
+    }
+}

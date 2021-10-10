@@ -1,0 +1,13 @@
+.videoContainer--video-home {
+  padding: 0 0.5rem;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .videoContainer--video-home {
+    padding: 0;
+  }
+}
+
+.videoElement--video-home {
+  height: 100%;
+}

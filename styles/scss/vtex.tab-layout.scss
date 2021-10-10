@@ -1,0 +1,39 @@
+@import "./utils/variables.scss";
+
+.listContainer--tabs-searchbar-style .listItemChildren {
+  padding: 0;
+  margin: 0;
+}
+
+.listContainer--tabs-searchbar-style
+  .listItemChildren--tabs-list-item-style-active,
+.listContainer--tabs-searchbar-style
+  .listItemChildren--tabs-list-item-style-inactive {
+  display: block;
+}
+
+.listContainer--tabs-searchbar-style
+  .listItemChildrenActive--tabs-list-item-style-active,
+.listContainer--tabs-searchbar-style
+  .listItemChildrenActive--tabs-list-item-style-inactive {
+  display: none;
+}
+
+.listContainer--tabs-searchbar-style:hover {
+  cursor: pointer;
+}
+
+.listItemChildren--tabs-list-item-style-inactive {
+  position: absolute;
+  bottom: -50px;
+  right: 15px;
+  background: $blue;
+  color: white;
+  z-index: 1;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5rem;
+}

@@ -1,0 +1,40 @@
+@import "./utils/variables.scss";
+
+.label--footerLink {
+  color: white;
+  font-family: $light;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link--limpio-tips-item-btn {
+  color: white;
+  background-color: $blue;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.link--limpi{
+  position: fixed;
+  top: 80%;
+  bottom: 20%;
+  right: 2%;
+  background-image: url("https://limpioonline.vteximg.com.br/arquivos/DrLIMPY-WhatsApp.png");
+  background-size: cover;
+  width: 115px;
+  height: 130px;
+  z-index: 999;
+  .label--limpi{
+    font-size: 0;
+  }
+
+  @media (max-width: 768px){
+    width: 90px;
+    height: 105px;
+  }
+} 

@@ -1,0 +1,159 @@
+{
+    "store.custom#contacto": {
+        "blocks": [
+            "list-context.image-list#home",
+            "flex-layout.row#contacto-container",
+            "flex-layout.row#newsletter"
+        ]
+    },
+    "flex-layout.row#contacto-container": {
+        "children": [
+            "flex-layout.col#contacto-container"
+        ],
+        "props": {
+            "blockClass": "contacto--container"
+        }
+    },
+    "flex-layout.col#contacto-container": {
+        "children": [
+            "rich-text#contacto-title",
+            "rich-text#contacto-subtitle",
+            "flex-layout.row#contacto",
+            "rich-text#contacto-bajada"
+        ]
+    },
+    "flex-layout.row#contacto": {
+        "props": {
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false,
+            "blockClass": "contacto-container"
+        },
+        "children": [
+            "form#contacto"
+        ]
+    },
+    "rich-text#contacto-title": {
+        "props": {
+            "text": "Contacto",
+            "blockClass": [
+                "landing-row--title",
+                "contact--title"
+            ]
+        }
+    },
+    "rich-text#contacto-subtitle": {
+        "props": {
+            "text": "A continuación se encuentran los Términos y Condiciones sobre los cuales se basará la relación entre Centro de Distribución Sur SRL (nombrada en su división Ecommerce cómo “Limpionline”) y todo Usuario que utilice los servicios de Limpionline.",
+            "blockClass": [
+                "landing-row--subtitle",
+                "contact--subtitle"
+            ]
+        }
+    },
+    "rich-text#contacto-bajada": {
+        "props": {
+            "text": "A continuación se encuentran los Términos y Condiciones sobre los cuales se basará la relación entre Centro de Distribución Sur SRL (nombrada en su división Ecommerce cómo “Limpionline”) y todo Usuario que utilice los servicios de Limpionline.",
+            "blockClass": [
+                "landing-row--subtitle",
+                "contact--bajada"
+            ]
+        }
+    },
+    "form#contacto": {
+        "props": {
+            "entity": "CO",
+            "schema": "contact",
+            "blockClass": "contact"
+        },
+        "blocks": [
+            "form-success#contact-success"
+        ],
+        "children": [
+            "form-input.textarea#contact-motive",
+            "form-input.text#contact-name",
+            "form-input.text#contact-lastName",
+            "form-input.text#contact-dni",
+            "form-input.text#contact-email",
+            "form-input.text#contact-phone",
+            "form-input.textarea#contact-comments",
+            "form-submit#contact-submit"
+        ]
+    },
+    "form-success#contact-success": {
+        "children": [
+            "flex-layout.col#contacto-success"
+        ]
+    },
+    "flex-layout.col#contacto-success": {
+        "props": {
+            "blockClass": "contacto-container-success"
+        },
+        "children": [
+            "rich-text#contact-successSubmit",
+            "rich-text#contact-successSubmit-sub"
+        ]
+    },
+    "rich-text#contact-successSubmit": {
+        "props": {
+            "text": "Tu mensaje ha sido enviado",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "successSubmit-title"
+        }
+    },
+    "rich-text#contact-successSubmit-sub": {
+        "props": {
+            "text": "En cuanto nuestros operadores se encuentren disponibles nos estaremos poniendo en contacto con vos y resolveremos el problema lo más pronto posible.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "successSubmit-subtitle"
+        }
+    },
+    "form-input.text#contact-name": {
+        "props": {
+            "pointer": "#/properties/name",
+            "placeholder": "Nombre"
+        }
+    },
+    "form-input.text#contact-email": {
+        "props": {
+            "pointer": "#/properties/email",
+            "placeholder": "Email"
+        }
+    },
+    "form-input.text#contact-lastName": {
+        "props": {
+            "pointer": "#/properties/lastName",
+            "placeholder": "Apellido"
+        }
+    },
+    "form-input.textarea#contact-motive": {
+        "props": {
+            "pointer": "#/properties/motive",
+            "placeholder": "Contanos qué te pasó así podamos resolver lo más rápido posible tu consulta!"
+        }
+    },
+    "form-input.textarea#contact-comments": {
+        "props": {
+            "pointer": "#/properties/comments",
+            "placeholder": "Comentarios"
+        }
+    },
+    "form-input.text#contact-dni": {
+        "props": {
+            "pointer": "#/properties/dni",
+            "placeholder": "Nº de Documento"
+        }
+    },
+    "form-input.text#contact-phone": {
+        "props": {
+            "pointer": "#/properties/phone",
+            "placeholder": "Teléfono"
+        }
+    },
+    "form-submit#contact-submit": {
+        "props": {
+            "label": "Enviar"
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.container--related-shelf-home {
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 6px 6px 8px -5px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.07);
+  box-shadow: 6px 6px 8px -5px rgb;
+  transition: 300ms all;
+}
+.container--related-shelf-home:hover {
+  -webkit-box-shadow: 6px 6px 8px -5px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.17);
+  box-shadow: 6px 6px 8px -5px rgb;
+  transition: 300ms all;
+}
+.container--related-shelf-home .imageNormal {
+  max-height: 280px;
+  height: 200px;
+}
+@media only screen and (max-width: 600px) {
+  .container--related-shelf-home .imageNormal {
+    max-height: 20vh !important;
+  }
+}
+
+.element--limpio-tips-shelf :global(.vtex-flex-layout-0-x-flexRowContent),
+.element--limpio-tips-shelf :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+.element--limpio-tips-shelf :global(.vtex-store-components-3-x-discountContainer),
+.element--limpio-tips-shelf .imageStackContainer,
+.element--limpio-tips-shelf .image {
+  height: 100%;
+}
+.element--limpio-tips-shelf :global(.vtex-flex-layout-0-x-flexRow) {
+  height: 80%;
+}
+.element--limpio-tips-shelf .image {
+  width: 100% !important;
+  object-fit: contain;
+}
+
+.brandName {
+  font-size: 1.1rem;
+  font-family: "Nunito-Bold";
+}
+
+.element--related-shelf-home .productBrand {
+  font-family: "Nunito-Bold";
+  font-size: 0.9rem;
+}
+
+.element--limpio-tips-shelf :global(.vtex-flex-layout-0-x-flexCol) {
+  display: flex;
+  justify-content: center;
+}
+.element--limpio-tips-shelf :global(.vtex-flex-layout-0-x-flexCol) :global(.vtex-flex-layout-0-x-flexColChild) {
+  height: fit-content !important;
+}
+
+.element--related-shelf-home {
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .element--related-shelf-home {
+    padding: 0.5rem;
+  }
+}
+
+.currencyContainer {
+  color: #006DB6;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container--related-shelf-home {
+    max-width: 100% !important;
+  }
+}
+
+.container--related-shelf-home .nameContainer,
+.container--related-shelf-home .priceContainer {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nameContainer,
+.priceContainer,
+.imageStackContainer {
+  padding: 0.3rem 0.8rem;
+}
+@media only screen and (max-width: 600px) {
+  .nameContainer,
+.priceContainer,
+.imageStackContainer {
+    padding: 0.1rem 0.3rem;
+  }
+}
+
+.container--related-shelf-home .sellingPrice {
+  font-family: "Nunito-Bold";
+}
+
+.container--related-shelf-home .nameWrapper {
+  text-align: left;
+}
+
+.element--limpio-tips-shelf .imageNormal {
+  width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  .element--limpio-tips-shelf .imageNormal {
+    width: 60%;
+  }
+  .element--limpio-tips-shelf :global(.vtex-flex-layout-0-x-flexRowContent) {
+    display: flex;
+  }
+  .element--limpio-tips-shelf .flexRowContent {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .buyButtonContainer {
+    padding: 0;
+  }
+
+  .container--limpio-tips-shelf {
+    max-width: 100% !important;
+  }
+  .container--limpio-tips-shelf :global(.vtex-flex-layout-0-x-flexRowContent) {
+    align-items: center;
+  }
+}
+.sellingPrice {
+  padding: 0;
+}
+
+.element {
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  justify-content: space-between;
+}
+.element :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-size: 0.9rem;
+}
+.element :global(.vtex-button) {
+  margin: 0.3rem 0;
+}
+
+.price_listPriceContainer {
+  text-align: left;
+}
+.price_listPriceContainer .price_listPrice {
+  padding-left: 0;
+}
+.price_listPriceContainer .price_listPrice .currencyContainer {
+  font-size: 0.95rem;
+  color: #4d4d4d;
+}
+
+.container--gallery-listLayout {
+  max-width: 100% !important;
+}
+.container--gallery-listLayout :global(.vtex-flex-layout-0-x-flexRowContent--PrecioProducto) {
+  margin: 0.3rem 0;
+}
+.container--gallery-listLayout .imageStackContainer {
+  padding: 0.3rem 0.8rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--search-gallery--limpio) :global(.vtex-search-result-3-x-galleryItem) {
+  flex-basis: 33% !important;
+  max-width: 33% !important;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-gallery--limpio) :global(.vtex-search-result-3-x-galleryItem) .containerNormal--related-shelf-limpio {
+  max-width: 400px !important;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-gallery--limpio) :global(.vtex-search-result-3-x-galleryItem) .containerNormal--related-shelf-limpio :global(.vtex-store-components-3-x-productDescriptionContainer) :global(.vtex-store-components-3-x-content) {
+  text-align: initial;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-gallery--limpio) :global(.vtex-search-result-3-x-galleryItem) .containerNormal--related-shelf-limpio :global(.vtex-flex-layout-0-x-flexRowContent--boton-limpi) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  justify-content: flex-end;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-gallery--limpio) :global(.vtex-search-result-3-x-galleryItem) .containerNormal--related-shelf-limpio :global(.vtex-flex-layout-0-x-flexRowContent--boton-limpi) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-button) {
+  width: 45%;
+}

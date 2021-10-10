@@ -1,0 +1,39 @@
+.tileListList {
+  flex-direction: column !important;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) {
+  flex-direction: row;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) {
+  flex-direction: row;
+  width: 100% !important;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-imageContainer) {
+  align-self: center;
+  flex: 0 0 calc(30% - 0px);
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-imageContainer) :global(.vtex-product-summary-2-x-imageNormal) {
+  max-height: 80px;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-information) {
+  flex: 0 0 calc(70% - 0px);
+  text-align: initial;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-information) :global(.vtex-product-summary-2-x-nameContainer) {
+  justify-content: flex-start !important;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-priceContainer) {
+  align-items: flex-start;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-priceContainer) :global(.vtex-product-summary-2-x-price_installmentContainer) {
+  display: none;
+}
+.tileListList :global(.vtex-product-summary-2-x-clearLink) :global(.vtex-product-summary-2-x-buyButtonContainer) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .biggy-autocomplete-wrapper {
+    width: 75vw !important;
+  }
+}

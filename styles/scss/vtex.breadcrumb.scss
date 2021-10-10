@@ -1,0 +1,52 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+.homeLink::after {
+  content: "Inicio";
+}
+.arrow,
+.link,
+.homeLink::after,
+.term,
+.termArrow {
+  color: $blue;
+  font-size: 0.9rem;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.container {
+  // padding: 0.5rem 8rem;
+  @include containerSides();
+
+}
+
+.container--breadcrumb--search {
+  display: flex;
+  padding: 0;
+  @include containerSides();
+  .link--breadcrumb--search {
+    padding: 0;
+  }
+  .arrow,
+  .link,
+  .homeLink::after,
+  .term,
+  .termArrow {
+    color: $blue;
+    font-family: $regular;
+    font-size: 0.8rem;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .caretIcon {
+    margin: 0 0.7rem;
+    width: 0.4rem;
+  }
+  .arrow {
+    padding: 0;
+  }
+}

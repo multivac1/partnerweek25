@@ -1,0 +1,13 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+.savings--discount {
+  background: #cf2741;
+  color: white;
+  padding: 0.2rem 1.5rem;
+  border-radius: 6px;
+  margin-left: 2rem;
+  .savingsPercentage {
+    font-family: "Nunito-Black";
+  }
+}

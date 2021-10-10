@@ -1,0 +1,199 @@
+@import "./utils/variables.scss";
+@import "./utils/responsive.scss";
+
+.container--related-shelf-home {
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 6px 6px 8px -5px rgb(0 0 0 / 7%);
+  -moz-box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.07);
+  box-shadow: 6px 6px 8px -5px rgb;
+  transition: 300ms all;
+  &:hover {
+    -webkit-box-shadow: 6px 6px 8px -5px rgb(0 0 0 / 17%);
+    -moz-box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.17);
+    box-shadow: 6px 6px 8px -5px rgb;
+    transition: 300ms all;
+  }
+  .imageNormal {
+    max-height: 280px;
+    height: 200px;
+  }
+  @include respond(phone) {
+    .imageNormal {
+      max-height: 20vh !important;
+    }
+  }
+}
+
+.element--limpio-tips-shelf {
+  :global(.vtex-flex-layout-0-x-flexRowContent),
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+  :global(.vtex-store-components-3-x-discountContainer),
+  .imageStackContainer,
+  .image {
+    height: 100%;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow){
+    height: 80%;
+  }
+  .image{
+    width: 100% !important;
+    object-fit: contain;
+  }
+}
+
+.brandName {
+  font-size: 1.1rem;
+  font-family: $bold;
+}
+
+.element--related-shelf-home .productBrand {
+  font-family: $bold;
+  font-size: 0.9rem;
+}
+
+.element--limpio-tips-shelf{
+  :global(.vtex-flex-layout-0-x-flexCol){
+    display: flex;
+    justify-content: center;
+    :global(.vtex-flex-layout-0-x-flexColChild){
+      height: fit-content !important;
+    }
+  }
+}
+
+.element--related-shelf-home {
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  @include respond(phone) {
+    padding: 0.5rem;
+  }
+}
+
+.currencyContainer {
+  color: $blue;
+  font-size: 1.25rem;
+}
+
+.container--related-shelf-home {
+  @include respond(phone) {
+    max-width: 100% !important;
+  }
+}
+
+.container--related-shelf-home .nameContainer,
+.container--related-shelf-home .priceContainer {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nameContainer,
+.priceContainer,
+.imageStackContainer {
+  padding: 0.3rem 0.8rem;
+  @include respond(phone) {
+    padding: 0.1rem 0.3rem;
+  }
+}
+
+.container--related-shelf-home .sellingPrice {
+  font-family: $bold;
+}
+
+.container--related-shelf-home .nameWrapper {
+  text-align: left;
+}
+
+.element--limpio-tips-shelf {
+  .imageNormal {
+    width: 60%;
+  }
+  @include respond(phone) {
+    .imageNormal {
+      width: 60%;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent) {
+      display: flex;
+    }
+    .flexRowContent {
+      align-items: center;
+    }
+  }
+}
+
+@include respond(phone) {
+  .buyButtonContainer {
+    padding: 0;
+  }
+
+  .container--limpio-tips-shelf {
+    max-width: 100% !important;
+
+    :global(.vtex-flex-layout-0-x-flexRowContent) {
+      align-items: center;
+    }
+  }
+}
+
+.sellingPrice {
+  padding: 0;
+}
+.element {
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  justify-content: space-between;
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 0.9rem;
+  }
+  :global(.vtex-button) {
+    margin: 0.3rem 0;
+  }
+}
+.price_listPriceContainer {
+  text-align: left;
+  .price_listPrice {
+    padding-left: 0;
+    .currencyContainer {
+      font-size: 0.95rem;
+      color: $darkGray;
+    }
+  }
+}
+
+.container--gallery-listLayout {
+  max-width: 100% !important;
+  :global(.vtex-flex-layout-0-x-flexRowContent--PrecioProducto) {
+    margin: 0.3rem 0;
+  }
+  .imageStackContainer {
+    padding: 0.3rem 0.8rem;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-gallery--limpio){
+  & :global(.vtex-search-result-3-x-galleryItem){
+    flex-basis: 33% !important;
+    max-width: 33% !important;
+    .containerNormal--related-shelf-limpio{
+      max-width: 400px !important;
+      & :global(.vtex-store-components-3-x-productDescriptionContainer){
+        & :global(.vtex-store-components-3-x-content){
+          text-align: initial;
+        }
+      }
+
+      & :global(.vtex-flex-layout-0-x-flexRowContent--boton-limpi){
+        & :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+          justify-content: flex-end;
+          & :global(.vtex-button){
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}

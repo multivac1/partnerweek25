@@ -1,0 +1,39 @@
+
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/responsive.scss";
+
+:global(.vtex-account_menu-link){
+    font-weight:600;
+    color:$blue;
+}/* 
+.boxContainerFooter :global(.vtex-button),
+.boxContainerFooter :global(.vtex-button):hover,
+.boxContainerFooter :global(.vtex-button):focus,
+.boxContainerBody :global(.vtex-button),
+.boxContainerBody :global(.vtex-button):hover,
+.boxContainerBody :global(.vtex-button):focus,
+:global(.vtex-pageHeader__children) :global(.vtex-button),
+:global(.vtex-pageHeader__children) :global(.vtex-button):hover,
+:global(.vtex-pageHeader__children) :global(.vtex-button):focus{
+    background:#b22470;
+    color:white;
+    text-transform:initial;
+    border:none;
+    border-radius:20px;
+} */
+
+:global(.vtex-account){
+    @include containerSides();
+    :global(.vtex-pageHeader__title){
+        color: $blue;
+        border-bottom: 1px solid $blue;
+        padding-bottom: 1.2rem;
+        font-size: 1.8rem !important;
+    }
+}
+
+.menu{
+    background-color: $gray;
+    padding: 2rem 1rem;
+}

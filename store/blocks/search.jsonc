@@ -1,7 +1,262 @@
 {
   "store.search": {
     "blocks": [
-      
+      "flex-layout.row#banner-gallery",
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+  "store.search#category": {
+    "blocks": [
+      "flex-layout.row#banner-gallery",
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "flex-layout.row#banner-gallery",
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+  "flex-layout.row#banner-gallery": {
+    "children": ["list-context.image-list#gallery"],
+    "props":{
+      "blockClass": "banner-gallery"
+    }
+  },
+  "list-context.image-list#gallery": {
+    "children": ["slider-layout#gallery"],
+    "props": {
+      "preload": true,
+      "height": 650,
+      "blockClass": "banner-gallery",
+      "images": [
+        {
+          "image": "https://limpioonline.vtexassets.com/arquivos/1.jpg",
+          "mobileImage": "https://limpioonline.vteximg.com.br/arquivos/1mobile.jpg",
+          "description": "limpio"
+        },
+        {
+          "image": "https://limpioonline.vtexassets.com/arquivos/1.jpg",
+          "mobileImage": "https://limpioonline.vteximg.com.br/arquivos/1mobile.jpg",
+          "description": "limpio"
+        }
+      ]
+    }
+  },
+  "slider-layout#gallery": {
+    "props": {
+      "blockClass": "banner-gallery",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "gallery-layout-switcher": {
+    "children": [
+      /*
+        * For accessibility purposes, it is fundamental to define the layout options following the same ordering used to declare them in step 2.
+        */
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
     ]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid"
+    },
+    "children": [
+      "icon-grid",
+      "responsive-layout.desktop#textOptionGrid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list"
+    },
+    "children": [
+      "icon-inline-grid",
+      "responsive-layout.desktop#textOptionList"
+    ]
+  },
+  "responsive-layout.desktop#textOptionGrid": {
+    "children": [
+      "rich-text#option-grid"
+    ]
+  },
+  "responsive-layout.desktop#textOptionList": {
+    "children": [
+      "rich-text#option-list"
+    ]
+  },
+  "rich-text#option-grid": {
+    "props": {
+      "text": "Grid",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "rich-text#option-list": {
+    "props": {
+      "text": "List",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "defaultGalleryLayout": "grid"
+    }
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "breadcrumb.search#search",
+      // "gallery-layout-switcher",
+      "flex-layout.row#results",
+      "flex-layout.row#newsletter"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "defaultGalleryLayout": ""
+    }
+  },
+
+  "search-not-found-layout": {
+    "children": [
+      "not-found"
+    ]
+  },
+  "breadcrumb.search#search": {
+    "props": {
+      "blockClass": "breadcrumb--search",
+      "showOnMobile": true
+    }
+  },
+  "search-result-layout.mobile": {
+    "children": [
+      "breadcrumb.search#search",
+      "flex-layout.row#results"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "defaultGalleryLayout": ""
+    }
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ],
+    "props": {
+      "blockClass": "result--container"
+    }
+  },
+  "flex-layout.col#filter": {
+    "props": {
+      "width": "20%",
+      "blockClass": "filter-navigator"
+    },
+    "children": [
+      "search-title.v2",
+      "rich-text#filter-navigator-title",
+      "filter-navigator.v3"
+    ]
+
+  },
+  "rich-text#filter-navigator-title": {
+    "props": {
+      "blockClass": "filter-navigator--title",
+      "text": "Filtrar búsqueda"
+    }
+  },
+  "filter-navigator.v3": {
+    "props": {
+      "HiddenFilters": {
+        "name": "brands"
+      },
+      "blockClass": "filtros--navegacion",
+      "navigationTypeOnMobile": "collapsible",
+      "scrollToTop": "smooth",
+      "fullWidthOnMobile": true,
+      "totalProductsOnMobile": "show",
+      "updateOnFilterSelectionOnMobile": true
+    }
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "search-content",
+      "search-fetch-more"
+    ],
+    "props": {
+      "blockClass": "search-gallery--content"
+    }
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "mobile": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "GridSummary": "product-summary.shelf#default",
+      "ListSummary": "product-summary.shelf#listLayout"
+    }
+  },
+  "flex-layout.row#searchinfo": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "searchInfo"
+    }
   }
 }

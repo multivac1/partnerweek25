@@ -1,0 +1,109 @@
+@import "./utils/variables.scss";
+
+.AsideNav {
+  .linkText {
+    font-family: $semiBold;
+  }
+}
+
+.menuItemText {
+  font-family: "Nunito-Bold";
+}
+
+.subMenuItemText {
+  text-decoration: none;
+  color: black;
+}
+
+.AsideNav .menuItemContainer:first-child {
+  .arrow {
+    border-right: 1.6px solid white;
+    border-top: 1.6px solid white;
+  }
+  .linkText.underlineAnimation::before {
+    display: none;
+  }
+}
+
+.linkText.underlineAnimation::before {
+  margin-top: 0.8px;
+}
+
+.subMenuChildrenItem .linkText {
+  font-family: $regular;
+  font-size: 0.9rem;
+}
+
+.titleAccordion {
+  margin: 0;
+  font-size: 1rem!important;
+  line-height: initial;
+
+}
+
+.menuItemLink {
+  padding: 0.5rem;
+}
+
+.SubMenuContainer,
+.AsideNav {
+  overflow: scroll;
+  height: 100%;
+  &::-webkit-scrollbar {
+    width: 4px; /* Tamaño del scroll en vertical */
+    height: 1px; /* Tamaño del scroll en horizontal */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $blue;
+    opacity: 0.5;
+    border-radius: 4px;
+  }
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperAccordion {
+  font-family: $semiBold;
+  color: $darkGray;
+}
+
+.contentAccordion {
+  .Link {
+    color: inherit;
+    text-transform: uppercase;
+    color: $blue;
+    text-decoration: none;
+    font-family: $bold;
+  }
+}
+
+.subMenuChildrenItem {
+  padding-bottom: 0.25rem;
+}
+
+.SubMenuContainer {
+  padding: 2rem 2rem 2rem 0rem;
+}
+
+.menu--father {
+  -webkit-appearance: none !important;
+  padding: 8px 32px;
+}
+.menu--father--customCategories {
+  text-decoration: none;
+  font-family: $bold;
+  color: #fff;
+}
+
+.wrapperAccordion:first-child{
+  .menu--father{
+    clip-path: inset(0px 1rem round 5px);
+  }
+}
+
+.wrapperAccordion--customCategories{
+  background-color: #006DB6;
+}

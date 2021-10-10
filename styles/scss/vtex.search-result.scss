@@ -1,0 +1,146 @@
+@import "./utils/mixins.scss";
+@import "./utils/variables.scss";
+
+.galleryItem--normal {
+  @include respond(phone) {
+    padding: 0.4rem !important;
+    flex-basis: 50% !important;
+  }
+}
+@include respond(phone) {
+  .accordionFilterContainer--filtros--navegacion{
+    padding-left: 1rem;
+  }
+  .accordionFilterItemIcon{
+    padding-right: 2rem;
+  }
+  .filterAccordionItemBox--filtros--navegacion {
+    padding: 0 !important;
+  }
+}
+.filterAccordionItemBox {
+  @include respond(phone) {
+    min-height: fit-content;
+    padding: 0.8rem 0;
+  }
+}
+.searchResultContainer {
+  background-color: #EDEDED;
+  .gallery--many {
+    padding-left: 0;
+    .galleryItem--normal {
+      padding: 0.25rem;
+      @include respond(phone) {
+        padding: 0.4rem !important;
+      }
+    }
+  }
+  .galleryTitle--layout {
+    font-size: 1.5rem;
+    color: $blue;
+    font-family: $bold;
+    margin: 0.8rem 0;
+  }
+  .totalProducts--layout {
+    text-align: left;
+    color: $darkGray;
+    padding-left: 0;
+    font-family: $bold;
+    .totalProductsMessage {
+      text-transform: lowercase;
+      color: $darkGray;
+    }
+  }
+  .filterPopupTitle {
+    color: $lightGray;
+    text-transform: initial;
+    .orderByText {
+      color: $darkGray;
+    }
+  }
+  .orderByOptionsContainer {
+    min-width: 180px;
+  }
+  .orderByOptionItem {
+    font-family: $regular;
+  }
+  .filterMessage--filtros--navegacion {
+    display: none;
+  }
+  .filter__container--filtros--navegacion {
+    border-color: transparent;
+  }
+  .filterItem {
+    :global(.vtex-checkbox__container) {
+      margin-right: 1.5rem;
+    }
+    :global(.vtex-checkbox__label) {
+      color: $darkGray;
+      font-weight: 400;
+      font-size: 0.8rem;
+      font-family: $semiBold;
+    }
+  }
+  .filter__container--selectedFilters {
+    display: none;
+  }
+  .filterTitle--filtros--navegacion {
+    font-family: $bold;
+    text-transform: uppercase;
+    color: $darkGray;
+    font-size: 0.9rem;
+  }
+  @include respond(phone) {
+    .filterPopupButton {
+      padding: 0;
+    }
+    .orderByButton {
+      padding: 0;
+    }
+  }
+}
+
+.gallery--list {
+  padding-left: 0;
+}
+
+.buttonShowMore {
+  margin-top: 3rem;
+}
+
+.galleryItem--list {
+  border-top: 0.7px solid $blue;
+}
+
+.gallery--grid {
+  padding-left: 0;
+}
+
+.sidebar {
+  top:55px;
+  height: 100%;
+  padding-bottom: 75px;
+  .accordionFilter{
+    padding: 0;
+  }
+  .filterButtonsBox {
+    position: relative;
+  }
+}
+
+.accordionFilterContainer--departamento{
+  display: none;
+}
+
+
+.accordionFilterContainer--filtros--navegacion--sub-categoria{
+  .accordionFilterItemTitle--filtros--navegacion{
+    font-size: 0;
+    &::after{
+      content: 'Productos';
+      font-size: 1.25rem;
+    }
+  }
+}
+
+

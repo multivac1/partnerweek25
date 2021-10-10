@@ -1,0 +1,144 @@
+{
+    "store.custom#como-comprar": {
+        "blocks": [
+            "list-context.image-list#home",
+            "flex-layout.row#como-comprar--container",
+            "flex-layout.row#newsletter"
+        ]
+    },
+    "flex-layout.row#como-comprar--container": {
+        "children": [
+            "flex-layout.col#como-comprar"
+        ],
+        "props": {
+            "blockClass": "landing-row--container"
+        }
+    },
+    "flex-layout.col#como-comprar": {
+        "children": [
+            "rich-text#como-comprar-title",
+            "flex-layout.col#como-comprar--col",
+            "rich-text#como-comprar-bajada"
+        ]
+    },
+    "rich-text#como-comprar-title": {
+        "props": {
+            "text": "¿Cómo comprar?",
+            "font": "t-heading-1",
+            "blockClass": "landing-row--title"
+        }
+    },
+    "flex-layout.col#como-comprar--col": {
+        "children": [
+            "flex-layout.row#como-comprar-detalle-1",
+            "flex-layout.row#como-comprar-detalle-2",
+            "flex-layout.row#como-comprar-detalle-3",
+            "flex-layout.row#como-comprar-detalle-4"
+        ],
+        "props": {
+            "blockClass": "landing-row--col"
+        }
+    },
+    "flex-layout.row#como-comprar-detalle-1": {
+        "children": [
+            "image#como-comprar-detalle-1",
+            "rich-text#como-comprar-detalle-1"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#como-comprar-detalle-1": {
+        "props": {
+            "src": "/",
+            "alt": "como comprar",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#como-comprar-detalle-1": {
+        "props": {
+            "text": "#### Registrá tu usuario \n Registrarte en Limpionline clickeando aquí, ingresa tus datos, y te enviaremos un email para verificar tu dirección de correo.",
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "flex-layout.row#como-comprar-detalle-2": {
+        "children": [
+            "image#como-comprar-detalle-2",
+            "rich-text#como-comprar-detalle-2"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#como-comprar-detalle-2": {
+        "props": {
+            "src": "/",
+            "alt": "como-comprar",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#como-comprar-detalle-2": {
+        "props": {
+            "text": "#### Elegí tus productos \n Seleccioná los productos que quieras, agregalos al carrito y clickeá en el botón “Pasar por caja”.",
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "flex-layout.row#como-comprar-detalle-3": {
+        "children": [
+            "image#como-comprar-detalle-3",
+            "rich-text#como-comprar-detalle-3"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#como-comprar-detalle-3": {
+        "props": {
+            "src": "/",
+            "alt": "como comprar",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#como-comprar-detalle-3": {
+        "props": {
+            "text": "#### Pagá y elegí la forma de envío \n Ingresá tus datosy elegí el horario de entrega. Por ultímo elegí como queres pagar. Tu pago se procesará de forma segura mediante Mercado Pago",
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "flex-layout.row#como-comprar-detalle-4": {
+        "children": [
+            "image#como-comprar-detalle-4",
+            "rich-text#como-comprar-detalle-4"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "image#como-comprar-detalle-4": {
+        "props": {
+            "src": "/",
+            "alt": "como comprar",
+            "blockClass": "landing-row-images",
+            "width": "6rem"
+        }
+    },
+    "rich-text#como-comprar-detalle-4": {
+        "props": {
+            "text": "#### Recibí tu pedido \n En el día acordado nuestras camionetas te estarán entregando tu pedido en tu domicilio. Te pedimos que hagas todo lo posible para poder recibir el pedido en tiempo y forma.",
+            "blockClass": "landing-row-detalle"
+        }
+    },
+    "rich-text#como-comprar-bajada": {
+        "props": {
+            "text": "CUALQUIER PERSONA QUE NO ACEPTE ESTOS TÉRMINOS Y CONDICIONES GENERALES, DEBERÁ ABSTENERSE DE UTILIZAR EL SITIO Y/O LOS SERVICIOS.",
+            "blockClass": "landing-row--bajada"
+        }
+    }
+}

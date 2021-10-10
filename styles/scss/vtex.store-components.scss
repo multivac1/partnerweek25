@@ -1,0 +1,298 @@
+@import "./utils/variables.scss";
+@import "./utils/responsive.scss";
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.searchBarInnerContainer {
+  width: 35rem;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-inpu) {
+  font-family: $regular;
+  color: black !important;
+}
+
+@media screen and (max-width: 720px) {
+  .searchBarInnerContainer {
+    width: 85%;
+  }
+  .logoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoContainer {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.imageElement {
+  width: 100%;
+}
+
+.infoCardContainer--info-card-onlyImage {
+  .infoCardTextContainer--info-card-onlyImage {
+    display: none;
+  }
+  .infoCardImageContainer--info-card-onlyImage {
+    width: 100%;
+    display: flex;
+    @include respond(phone) {
+      margin: 2rem 0;
+      display: block;
+    }
+  }
+}
+
+.infoCardContainer {
+  padding: 0;
+}
+
+.infoCardContainer--info-card-suscribe-instagram {
+  flex-direction: column;
+}
+
+.infoCardContainer--info-card-home {
+  :global(.vtex-button) {
+    background-color: transparent;
+    border: none;
+  }
+  .infoCardCallActionContainer--info-card-home {
+    margin: 0;
+  }
+  :global(.vtex-button__label) {
+    padding: 0;
+    text-align: left;
+    text-transform: initial;
+    font-family: $bold;
+    font-size: 1.15rem;
+  }
+  &.infoCardContainer--info-card-suscribe-youtube {
+    background-color: #d30b15;
+    flex-direction: row-reverse;
+    padding: 1rem 2rem;
+    @include respond(phone) {
+      display: flex;
+    }
+    @include respond(big-desktop) {
+      padding: 1.5rem 3rem;
+    }
+    .infoCardTextContainer {
+      width: fit-content;
+      padding-right: 0;
+    }
+    .infoCardImageContainer {
+      width: fit-content;
+      .infoCardImage {
+        width: 4rem;
+      }
+    }
+  }
+  &.infoCardContainer--info-card-suscribe-instagram {
+    padding: 1.3rem;
+    padding-top: 0;
+    background-color: $gray;
+    :global(.vtex-button__label) {
+      color: $blue;
+    }
+    .infoCardImageContainer,
+    .infoCardTextContainer {
+      width: 100%;
+    }
+    @include respond(phone) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.infoCardImage--info-card-onlyImage:first-child {
+  width: 100%;
+}
+
+.searchBarInnerContainer {
+  :global(.vtex-input__suffix) {
+    background-color: $blue;
+  }
+}
+
+.searchBarIcon {
+  padding: 0;
+}
+
+.autoCompleteOuterContainer {
+  :global(.vtex-input-prefix__group) {
+    border: none;
+  }
+  :global(.vtex-styleguide-9-x-input) {
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.imageElement--limpioTips--textImage {
+  width: 70%;
+  @include respond(phone) {
+    width: 80%;
+  }
+}
+
+.imageElement--limpioTips-image {
+  position: absolute;
+  width: 18rem;
+  bottom: 0;
+  left: 40%;
+  @include respond(phone) {
+    transform: scaleX(-1);
+    width: 12rem;
+    position: absolute;
+    right: 0;
+    left: auto;
+  }
+  @include respond(sm) {
+    width: 10rem;
+  }
+}
+
+@include respond(phone) {
+  .imageElementLink--limpioTips-image {
+    /*  display: flex;
+    justify-content: flex-end;
+    transform: translateX(5%); */
+    position: absolute;
+    // width: 12rem;
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+}
+
+.productBrand {
+  font-size: 1.3rem;
+}
+
+.productDescriptionTitle {
+  color: $blue;
+}
+
+.productNameContainer {
+  //margin: 1rem 0;
+}
+
+.sellingPriceValue {
+  color: $blue;
+  font-family: $bold;
+}
+
+.productBrand {
+  color: $darkGray;
+  font-family: $bold;
+}
+
+.productImagesThumb {
+  border: 0.8px solid $gray;
+}
+
+.productImagesThumbActive {
+  border: 0.8px solid #0070bb77;
+}
+
+.sellingPriceContainer {
+  padding: 0;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-container) {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  :global(.vtex-reviews-and-ratings-2-x-reviewsHeading) {
+    display: none;
+  }
+  :global(.vtex-reviews-and-ratings-2-x-loginLink) {
+    padding: 0;
+    color: $blue;
+    text-decoration: none;
+  }
+  :global(.vtex-dropdown__container) {
+    display: none;
+  }
+}
+
+.imageElement--promotionalInfoCard--image {
+  width: 6rem;
+  @include respond(phone) {
+    width: 4rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
+.imageElementLink--promotionalInfoCard--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discountInsideContainer {
+  background-color: $bordo;
+  border-radius: 5px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+  font-family: "Nunito-Black";
+}
+
+.discountContainer {
+  width: 100%;
+}
+
+.productBrandLogoWrapper {
+  display: flex;
+  justify-content: flex-start;
+  /* .productBrandLogo {
+    width: 3rem;
+    height: auto !important;
+  } */
+}
+
+.price_listPriceLabel {
+  text-decoration: none;
+}
+
+.price_sellingPriceLabel {
+  display: none;
+}
+
+.imageElement--landing-row-images {
+  max-width: 80px;
+  height: fit-content;
+}
+
+.imageElement--compra-segura {
+  width: 80%;
+  margin: 3rem 0;
+}
+
+.pointerEventsAuto {
+  background-color: white;
+}
+
+.showMoreButton {
+  background-color: transparent;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--redes-container) {
+  .imageElement--logo-footer {
+    width: 9rem !important;
+    height: fit-content;
+  }
+}
+
+.imageElement--logo-footer {
+  margin-bottom: 1rem;
+}

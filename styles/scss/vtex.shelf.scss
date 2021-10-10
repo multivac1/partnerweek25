@@ -1,0 +1,30 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+.relatedProducts--related-product-page {
+  background-color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  .title--related-product-page {
+    font-size: 1.3rem;
+    color: $darkGray;
+    width: 100%;
+    text-align: left;
+    font-family: $bold;
+    justify-content: center;
+    @include container();
+    padding-top: 3rem;
+  }
+  .shelfContentContainer--related-product-page {
+    @include container();
+  }
+  :global(.vtex-slider-0-x-dotsContainer) {
+    display: none;
+  }
+  .arrowLeft--related-product-page {
+    left: -3rem;
+  }
+  .arrowRight--related-product-page {
+    right: -3rem;
+  }
+}

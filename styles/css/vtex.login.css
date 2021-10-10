@@ -1,0 +1,183 @@
+.label {
+  position: relative;
+  font-size: 0.8rem;
+  font-family: "Nunito-Bold";
+  padding-left: 0;
+  color: #006DB6;
+  transition: all 300ms;
+  min-width: 6rem;
+}
+@media only screen and (max-width: 600px) {
+  .label {
+    color: white;
+  }
+}
+
+.container {
+  height: fit-content;
+}
+.container :global(.vtex-button) {
+  min-height: inherit;
+}
+.container :global(.vtex-button__label) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    justify-content: flex-end;
+  }
+}
+
+.container :global(.vtex-button):hover {
+  background-color: transparent;
+}
+
+.container :global(.vtex-button):hover :global(.vtex-login-2-x-label) {
+  color: #01426e;
+  transition: all 300ms;
+}
+
+/* .label::before {
+    position: absolute;
+    left: 107.5%;
+    top: 5%;
+    content: "";
+    background-image: url("assets/icons/user-solid.svg");
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+  } */
+.accessCodeOptionBtn :global(.vtex-button),
+.emailPasswordOptionBtn :global(.vtex-button) {
+  background-color: #0071bb;
+  color: #fff;
+  font-family: "Nunito-Bold";
+  font-size: 1rem;
+  border-radius: 300px;
+}
+
+.sendButton :global(.vtex-button) {
+  background-color: #0071bb;
+  color: #fff;
+  border-color: #0071bb;
+  border-radius: 300px;
+}
+
+.sendButton :global(.vtex-button__label) {
+  font-family: "Nunito-Bold";
+  font-size: 1rem;
+}
+
+.backButton :global(.vtex-button) {
+  color: #0071bb;
+}
+
+.inputContainerPassword :global(.vtex-input__suffix) {
+  padding-left: 0;
+}
+
+.box {
+  right: -100px !important;
+}
+
+@media screen and (max-width: 720px) {
+  .label {
+    display: block;
+  }
+
+  /*   .label::before {
+      position: absolute;
+      left: 175%;
+      top: -50%;
+      content: "";
+      background-image: url("assets/icons/user-solid.svg");
+      background-size: 1rem 1rem;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 2rem;
+      height: 1rem;
+      color: #0071bb;
+    } */
+  /*   .buttonLink {
+    transform: translateY(-20%);
+  } */
+  .profile {
+    display: block;
+    color: white;
+    max-width: 100%;
+    /*    width: 0; */
+  }
+
+  .profile::before {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    content: "";
+    /* background-image: url("assets/icons/user-solid.svg"); */
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    color: #0071bb;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .buttonLink :global(.vtex-button__label) {
+    padding-right: 0.8rem;
+  }
+}
+:global(.vtex-checkbox__inner-container) {
+  background-color: #fff;
+}
+
+:global(.vtex-checkbox__box) {
+  color: black;
+}
+
+.bg-base.bg-base--inverted {
+  background-color: transparent;
+}
+
+:global(.vtex-search-result-3-x-filter__container--category-1) {
+  margin-top: 2rem;
+}
+:global(.vtex-search-result-3-x-filter__container--category-1) :global(.vtex-search-result-3-x-filter--filtros--navegacion) {
+  display: none;
+}
+
+:global(.vtex-search-result-3-x-filtersWrapper--filtros--navegacion) {
+  display: flex;
+  flex-direction: column;
+}
+
+:global(.vtex-search-result-3-x-filter__container--priceRange) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  order: 3;
+}
+
+:global(.vtex-search-result-3-x-filter__container--brand) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+:global(.vtex-search-result-3-x-filter__container--category-3) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+:global(.vtex-search-result-3-x-filter__container--category-3) :global(.vtex-search-result-3-x-filterTitle--filtros--navegacion) > span:first-child {
+  font-size: 0;
+}
+:global(.vtex-search-result-3-x-filter__container--category-3) :global(.vtex-search-result-3-x-filterTitle--filtros--navegacion) > span:first-child::after {
+  content: "Productos";
+  font-size: 0.9rem;
+}

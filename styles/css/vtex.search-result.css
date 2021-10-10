@@ -1,0 +1,142 @@
+@media only screen and (max-width: 600px) {
+  .galleryItem--normal {
+    padding: 0.4rem !important;
+    flex-basis: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordionFilterContainer--filtros--navegacion {
+    padding-left: 1rem;
+  }
+
+  .accordionFilterItemIcon {
+    padding-right: 2rem;
+  }
+
+  .filterAccordionItemBox--filtros--navegacion {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .filterAccordionItemBox {
+    min-height: fit-content;
+    padding: 0.8rem 0;
+  }
+}
+
+.searchResultContainer {
+  background-color: #EDEDED;
+}
+.searchResultContainer .gallery--many {
+  padding-left: 0;
+}
+.searchResultContainer .gallery--many .galleryItem--normal {
+  padding: 0.25rem;
+}
+@media only screen and (max-width: 600px) {
+  .searchResultContainer .gallery--many .galleryItem--normal {
+    padding: 0.4rem !important;
+  }
+}
+.searchResultContainer .galleryTitle--layout {
+  font-size: 1.5rem;
+  color: #006DB6;
+  font-family: "Nunito-Bold";
+  margin: 0.8rem 0;
+}
+.searchResultContainer .totalProducts--layout {
+  text-align: left;
+  color: #4d4d4d;
+  padding-left: 0;
+  font-family: "Nunito-Bold";
+}
+.searchResultContainer .totalProducts--layout .totalProductsMessage {
+  text-transform: lowercase;
+  color: #4d4d4d;
+}
+.searchResultContainer .filterPopupTitle {
+  color: #888787;
+  text-transform: initial;
+}
+.searchResultContainer .filterPopupTitle .orderByText {
+  color: #4d4d4d;
+}
+.searchResultContainer .orderByOptionsContainer {
+  min-width: 180px;
+}
+.searchResultContainer .orderByOptionItem {
+  font-family: "Nunito-Regular";
+}
+.searchResultContainer .filterMessage--filtros--navegacion {
+  display: none;
+}
+.searchResultContainer .filter__container--filtros--navegacion {
+  border-color: transparent;
+}
+.searchResultContainer .filterItem :global(.vtex-checkbox__container) {
+  margin-right: 1.5rem;
+}
+.searchResultContainer .filterItem :global(.vtex-checkbox__label) {
+  color: #4d4d4d;
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-family: "Nunito-SemiBold";
+}
+.searchResultContainer .filter__container--selectedFilters {
+  display: none;
+}
+.searchResultContainer .filterTitle--filtros--navegacion {
+  font-family: "Nunito-Bold";
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 600px) {
+  .searchResultContainer .filterPopupButton {
+    padding: 0;
+  }
+  .searchResultContainer .orderByButton {
+    padding: 0;
+  }
+}
+
+.gallery--list {
+  padding-left: 0;
+}
+
+.buttonShowMore {
+  margin-top: 3rem;
+}
+
+.galleryItem--list {
+  border-top: 0.7px solid #006DB6;
+}
+
+.gallery--grid {
+  padding-left: 0;
+}
+
+.sidebar {
+  top: 55px;
+  height: 100%;
+  padding-bottom: 75px;
+}
+.sidebar .accordionFilter {
+  padding: 0;
+}
+.sidebar .filterButtonsBox {
+  position: relative;
+}
+
+.accordionFilterContainer--departamento {
+  display: none;
+}
+
+.accordionFilterContainer--filtros--navegacion--sub-categoria .accordionFilterItemTitle--filtros--navegacion {
+  font-size: 0;
+}
+.accordionFilterContainer--filtros--navegacion--sub-categoria .accordionFilterItemTitle--filtros--navegacion::after {
+  content: "Productos";
+  font-size: 1.25rem;
+}

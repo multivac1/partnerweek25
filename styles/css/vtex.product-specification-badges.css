@@ -1,0 +1,45 @@
+.groupContainer {
+  align-items: flex-end;
+}
+.groupContainer .badgeContainer {
+  width: 80%;
+  background-color: red;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+.groupContainer .badgeContainer .badgeText {
+  color: #fff;
+  width: 100%;
+  margin: 0;
+}
+
+.groupContainer--destacados-ficha {
+  position: absolute;
+  left: 0;
+  right: 0;
+  align-items: flex-start;
+}
+.groupContainer--destacados-ficha .badgeContainer--destacados-ficha {
+  width: auto;
+  padding: 0.3rem;
+}
+.groupContainer--destacados-ficha .badgeContainer--destacados-ficha .badgeText--destacados-ficha {
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .groupContainer--destacados-ficha .badgeContainer--destacados-ficha .badgeText--destacados-ficha {
+    font-size: 0.7rem;
+  }
+}
+.groupContainer--destacados-ficha .badgeContainer--destacados-ficha--promo {
+  background-color: #BCD85F;
+}
+.groupContainer--destacados-ficha .badgeContainer--destacados-ficha--oferta {
+  background-color: #0071BD;
+}
+.groupContainer--destacados-ficha .badgeContainer--destacados-ficha--nuevo {
+  background-color: #2A9ED9;
+}
+.groupContainer--destacados-ficha .badgeContainer--destacados-ficha--mas-vendidos {
+  background-color: #F68220;
+}

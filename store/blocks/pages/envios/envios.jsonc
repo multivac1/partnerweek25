@@ -1,0 +1,127 @@
+{
+    "store.custom#envios": {
+        "blocks": [
+            "list-context.image-list#home",
+            "flex-layout.row#envios--container",
+            "flex-layout.row#newsletter"
+        ]
+    },
+    "flex-layout.row#envios--container": {
+        "children": [
+            "flex-layout.col#envios"
+        ],
+        "props": {
+            "blockClass": "landing-row--container"
+        }
+    },
+    "flex-layout.col#envios": {
+        "children": [
+            "rich-text#envios-title",
+            "flex-layout.row#envios--row",
+            "flex-layout.col#envios-important"
+        ]
+    },
+    "rich-text#envios-title": {
+        "props": {
+            "text": "Condiciones de envíos",
+            "font": "t-heading-1",
+            "blockClass": "landing-row--title"
+        }
+    },
+    "flex-layout.row#envios--row": {
+        "children": [
+            "flex-layout.col#envios-1",
+            "flex-layout.col#envios-2",
+            "flex-layout.col#envios-3"
+        ],
+        "props": {
+            "blockClass": "terminos--col"
+        }
+    },
+    "flex-layout.col#envios-1": {
+        "children": [
+            "image#envios-1",
+            "rich-text#envios-1"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "preventVerticalStretch": true,
+            "blockClass": "envios-col"
+        }
+    },
+    "image#envios-1": {
+        "props": {
+            "src": "/",
+            "width": "4rem",
+            "blockClass": "envios-image"
+        }
+    },
+    "rich-text#envios-1": {
+        "props": {
+            "text": "## Tiempo de entrega \n Realizamos envios en CABA y GBA. Entrega de lunes a viernes de 8:00 a 22:00 hs. Los pedidos se entregan en la franja horaria antes mencionada, no en horarios específicos, ya que, debido a la alta demanda, la logística organiza los pedidos por ruta dentro de ese horario, si no se encuentra en el domicilio de entrega en esa franja horaria, por favor reprograme su entrega. Contáctese para pautar la entrega de su pedido.",
+            "blockClass": "envios-text"
+        }
+    },
+    "flex-layout.col#envios-2": {
+        "children": [
+            "image#envios-2",
+            "rich-text#envios-2"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "preventVerticalStretch": true,
+            "blockClass": "envios-col"
+        }
+    },
+    "image#envios-2": {
+        "props": {
+            "src": "/",
+            "width": "4rem",
+            "blockClass": "envios-image"
+        }
+    },
+    "rich-text#envios-2": {
+        "props": {
+            "text": "## CABA y GBA sin cargo \n Todos los envíos dentro de CABA y GBA bonificados en compras a partir de $2500. Verifique si su ubicación esta dentro del rango de cobertura. En caso de no estarlo, aplica las mismas condiciones de envíos para el interior. Si su compra es inferior a $2500, verifique el costo de su envío [clickeando acá](#)",
+            "blockClass": "envios-text"
+        }
+    },
+    "flex-layout.col#envios-3": {
+        "children": [
+            "image#envios-3",
+            "rich-text#envios-3"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "preventVerticalStretch": true,
+            "blockClass": "envios-col"
+        }
+    },
+    "image#envios-3": {
+        "props": {
+            "src": "/",
+            "width": "4rem",
+            "blockClass": "envios-image"
+        }
+    },
+    "rich-text#envios-3": {
+        "props": {
+            "text": "## Envíos al interior del país \n Gastos de envío al interior según peso total de los paquetes y el expreso que el cliente solicite. La entrega de paquetes hasta el expreso son sin cargo. Te aconsejamos agrupar todos tus artículos en un mismo pedido. No nos hacemos responsables del trato que los expresos le puedan dar a tu pedido.",
+            "blockClass": "envios-text"
+        }
+    },
+    "flex-layout.col#envios-important": {
+        "children": [
+            "rich-text#envios-important"
+        ],
+        "props": {
+            "blockClass": "envios-important"
+        }
+    },
+    "rich-text#envios-important": {
+        "props": {
+            "text": "##### Importante \n El único requisito para la vigencia de estas condiciones es el cumplimiento de la compra mínima de $2500 establecida en el frente del sitio (Para el interior solamente entregamos sin cargo en el expreso dentro de CABA). Estas condiciones pueden variar dependiendo las diferentes ofertas del momento. Somos responsables de los daños que pueda sufrir tu paquete tras el envío y hacemos todo lo posible para proteger todos los artículos. Toda tu compra está garantizada. Nos aseguramos que recibas toda la mercadería en buen estado. ",
+            "blockClass": "envios-important"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "menu.drawer": {
+    "allowed": ["menu-item", "flex-layout"]
+  },
+  "flex-layout.col.home": {
+    "allowed": ["rich-text"]
+  },
+  "submenu.accordion.product-page": {
+    "allowed": ["rich-text"]
+  },
+  "flex-layout.col.product-page": {
+    "allowed": [
+      "flex-layout",
+      "product-price",
+      "product-name",
+      "rich-text",
+      "sku-selector",
+      "buy-button",
+      "product-description",
+      "product-separator",
+      "product-quantity",
+      "menu-item"
+    ]
+  },
+  "flex-layout.col.institutional": {
+    "allowed": ["menu-item", "menu"]
+  },
+  "flex-layout.col.footer-1-mobile": {
+    "allowed": ["rich-text", "social-networks", "menu"]
+  }
+}

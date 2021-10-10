@@ -1,0 +1,13 @@
+.productHighlightWrapper {
+  text-align: end;
+  margin: 0.5rem 0;
+}
+.productHighlightWrapper .productHighlightText {
+  background: #bcd85f;
+  color: white;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  font-family: "Nunito-Black";
+  border-radius: 5px;
+  text-transform: uppercase;
+}

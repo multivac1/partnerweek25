@@ -1,0 +1,11 @@
+.quantitySelectorTitle {
+  font-size: 0.85rem;
+  font-family: "Nunito-Regular";
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .quantitySelectorContainer {
+    display: none;
+  }
+}

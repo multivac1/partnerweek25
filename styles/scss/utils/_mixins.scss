@@ -1,0 +1,41 @@
+@import "./responsive.scss";
+
+@mixin container() {
+  // width: 78%;
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 0;
+  @include respond(phone) {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@mixin containerSides() {
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+  @include respond(phone) {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@mixin strokeColor($isDark: true) {
+  @if $isDark {
+    -webkit-text-stroke: 1.5px $primary-bg;
+    color: transparent;
+  } @else {
+    -webkit-text-stroke: 1.5px $primary-light-bg;
+    color: transparent;
+  }
+}
+
+@mixin activeLink($isDark: true) {
+  @if $isDark {
+    color: $primary-bg;
+  } @else {
+    color: $primary-light-bg;
+  }
+}

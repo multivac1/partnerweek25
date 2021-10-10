@@ -1,0 +1,49 @@
+.openIconContainer {
+  display: relative;
+}
+
+/* .openIconContainer::after {
+  content: "Carrito";
+  color: black;
+  font-family: $regular;
+  font-size: 0.7rem;
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+} */
+@media screen and (max-width: 720px) {
+  .minicartContainer {
+    padding-left: 0.5rem;
+  }
+  .minicartContainer .openIconContainer,
+.minicartContainer :global(.vtex-button__label) {
+    padding: 0;
+  }
+}
+
+.cartIcon {
+  fill: black;
+  width: 25px;
+  height: 25px;
+  overflow: visible !important;
+}
+@media only screen and (max-width: 600px) {
+  .cartIcon {
+    width: 22px;
+  }
+}
+
+.openIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.minicartQuantityBadgeDefault {
+  top: -0.5rem;
+  right: -0.6rem;
+  font-size: 0.65rem;
+}

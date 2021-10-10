@@ -1,0 +1,10 @@
+{
+    "store.custom#limpio-tips": {
+        "blocks": [
+            "flex-layout.row#banner-gallery",
+            "search-result-layout.customQuery#limpio-tips",
+            "list-context.product-list#mas-vendidos",
+            "flex-layout.row#newsletter"
+        ]
+    }
+}
