@@ -3,8 +3,8 @@
     "props": {
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://limpioonline.vteximg.com.br/arquivos/asociate_home.png",
-      "mobileImageUrl": "https://limpioonline.vteximg.com.br/arquivos/asociate_home.png",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP752262-MLA45834982889_052021-B.jpg",
+      "mobileImageUrl": "https://http2.mlstatic.com/D_NQ_NP752262-MLA45834982889_052021-B.jpg",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-onlyImage",
       "textAlignment": "center"
@@ -14,8 +14,8 @@
     "props": {
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://limpioonline.vteximg.com.br/arquivos/prevencion_home.png",
-      "mobileImageUrl": "https://limpioonline.vteximg.com.br/arquivos/prevencion_home.png",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP737394-MLA46317607267_062021-B.jpg",
+      "mobileImageUrl": "https://http2.mlstatic.com/D_NQ_NP737394-MLA46317607267_062021-B.jpg",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-onlyImage",
       "textAlignment": "center"

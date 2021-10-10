@@ -1,9 +1,6 @@
 {
   "store.search": {
-    "blocks": [
-      "flex-layout.row#banner-gallery",
-      "search-result-layout"
-    ],
+    "blocks": ["flex-layout.row#banner-gallery", "search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -13,10 +10,7 @@
     }
   },
   "store.search#category": {
-    "blocks": [
-      "flex-layout.row#banner-gallery",
-      "search-result-layout"
-    ],
+    "blocks": ["flex-layout.row#banner-gallery", "search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -26,10 +20,7 @@
     }
   },
   "store.search#subcategory": {
-    "blocks": [
-      "flex-layout.row#banner-gallery",
-      "search-result-layout"
-    ],
+    "blocks": ["flex-layout.row#banner-gallery", "search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -40,7 +31,7 @@
   },
   "flex-layout.row#banner-gallery": {
     "children": ["list-context.image-list#gallery"],
-    "props":{
+    "props": {
       "blockClass": "banner-gallery"
     }
   },
@@ -80,8 +71,8 @@
   "gallery-layout-switcher": {
     "children": [
       /*
-        * For accessibility purposes, it is fundamental to define the layout options following the same ordering used to declare them in step 2.
-        */
+       * For accessibility purposes, it is fundamental to define the layout options following the same ordering used to declare them in step 2.
+       */
       "gallery-layout-option#grid",
       "gallery-layout-option#list"
     ]
@@ -90,29 +81,19 @@
     "props": {
       "name": "grid"
     },
-    "children": [
-      "icon-grid",
-      "responsive-layout.desktop#textOptionGrid"
-    ]
+    "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
   },
   "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
-    "children": [
-      "icon-inline-grid",
-      "responsive-layout.desktop#textOptionList"
-    ]
+    "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
   },
   "responsive-layout.desktop#textOptionGrid": {
-    "children": [
-      "rich-text#option-grid"
-    ]
+    "children": ["rich-text#option-grid"]
   },
   "responsive-layout.desktop#textOptionList": {
-    "children": [
-      "rich-text#option-list"
-    ]
+    "children": ["rich-text#option-list"]
   },
   "rich-text#option-grid": {
     "props": {
@@ -142,8 +123,7 @@
     "children": [
       "breadcrumb.search#search",
       // "gallery-layout-switcher",
-      "flex-layout.row#results",
-      "flex-layout.row#newsletter"
+      "flex-layout.row#results"
     ],
     "props": {
       "preventRouteChange": true,
@@ -152,9 +132,7 @@
   },
 
   "search-not-found-layout": {
-    "children": [
-      "not-found"
-    ]
+    "children": ["not-found"]
   },
   "breadcrumb.search#search": {
     "props": {
@@ -163,20 +141,14 @@
     }
   },
   "search-result-layout.mobile": {
-    "children": [
-      "breadcrumb.search#search",
-      "flex-layout.row#results"
-    ],
+    "children": ["breadcrumb.search#search", "flex-layout.row#results"],
     "props": {
       "preventRouteChange": true,
       "defaultGalleryLayout": ""
     }
   },
   "flex-layout.row#results": {
-    "children": [
-      "flex-layout.col#filter",
-      "flex-layout.col#search"
-    ],
+    "children": ["flex-layout.col#filter", "flex-layout.col#search"],
     "props": {
       "blockClass": "result--container"
     }
@@ -191,7 +163,6 @@
       "rich-text#filter-navigator-title",
       "filter-navigator.v3"
     ]
-
   },
   "rich-text#filter-navigator-title": {
     "props": {
@@ -223,10 +194,7 @@
     }
   },
   "search-content": {
-    "blocks": [
-      "gallery",
-      "not-found"
-    ]
+    "blocks": ["gallery", "not-found"]
   },
   "gallery": {
     "props": {
@@ -250,10 +218,7 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": [
-      "total-products.v2",
-      "order-by.v2"
-    ],
+    "children": ["total-products.v2", "order-by.v2"],
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "searchInfo"

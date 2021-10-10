@@ -22,10 +22,8 @@
   },
   "flex-layout.col#menu-container": {
     "children": [
-      //"flex-layout.row#top",
       "flex-layout.row#desktop",
       "link#icono-ws",
-      // "category-menu",
       "flex-layout.row#categories-menu"
     ],
     "props": {
@@ -44,39 +42,6 @@
       "blockClass": ["sticky-header", "categories-container"]
     },
     "children": ["menu#categories-menu"]
-  },
-  "flex-layout.col#promotions-info": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": false,
-      "preventVerticalStretch": false,
-      "fullWidth": true,
-      "blockClass": "promotions-info",
-      "width": "27%"
-    },
-    "children": ["flex-layout.row#promotions-info"]
-  },
-  "flex-layout.row#promotions-info": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": false,
-      "blockClass": "promotions-text"
-    },
-    "children": ["rich-text#promotions-text"]
-  },
-  "rich-text#promotions-text": {
-    "props": {
-      "text": "**ENVÍOS GRATIS + $5000 /** HASTA 18 CUOTAS SIN INTERÉS",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-small",
-      "textColor": "c-on-action-primary",
-      "blockClass": "promotions-text"
-    }
   },
 
   "flex-layout.row#desktop": {
@@ -110,8 +75,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "/",
-      "width": "150",
+      "url": "https://i.imgur.com/AQA73Xq.png",
+      "width": "180",
       "mobileWidth": 90,
       "mobileHeight": 40
       /*  "mobileHeight": 32 */
@@ -124,7 +89,7 @@
       "inputType": "search",
       "placeholder": "Buscá productos, categorías o marcas",
       "blurOnSubmit": true,
-      "productLayout":"VERTICAL"
+      "productLayout": "VERTICAL"
     }
   },
   "login": {
@@ -182,7 +147,7 @@
     }
   },
   "flex-layout.row#main-header-left": {
-    "children": ["drawer", "logo"],
+    "children": ["drawer"],
     "props": {
       "blockClass": "main-header-left",
       "preserveLayoutOnMobile": true,
@@ -276,53 +241,9 @@
       "productLayout": "HORIZONTAL"
     }
   },
-  "autocomplete-result-list.v2":{
+  "autocomplete-result-list.v2": {
     "props": {
       "productLayout": "HORIZONTAL"
-    }
-  },
-  "flex-layout.row#top-mobile": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": false,
-      "fullWidth": true,
-      "blockClass": "row-top"
-    },
-    "children": ["flex-layout.col#promotions-info-mobile"]
-  },
-  "flex-layout.col#promotions-info-mobile": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": false,
-      "preventVerticalStretch": false,
-      "fullWidth": true,
-      "blockClass": "promotions-info",
-      "width": "27%"
-    },
-    "children": ["flex-layout.row#promotions-info-mobile"]
-  },
-  "flex-layout.row#promotions-info-mobile": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": false,
-      "blockClass": "promotions-text"
-    },
-    "children": ["rich-text#promotions-text-mobile"]
-  },
-  "rich-text#promotions-text-mobile": {
-    "props": {
-      "text": "**ENTRENÁ EN CASA**",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-small",
-      "textColor": "c-on-action-primary",
-      "blockClass": "promotions-text-mobile"
     }
   }
 }

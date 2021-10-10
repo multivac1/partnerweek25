@@ -1,65 +1,25 @@
 {
   "store.home": {
     "blocks": [
-      "modal-trigger#pop-up-ws",
       "list-context.image-list#home",
       "flex-layout.row#promotional-info",
-      "flex-layout.row#banner-home",
-      "flex-layout.row#slider-brands",
-      "flex-layout.row#limpio-tips-container-home",
-      "flex-layout.row#limpio-tips-container-home--mobile",
-      "flex-layout.row#suscribe-banners",
-      "flex-layout.row#newsletter"
+      "flex-layout.row#banner-home"
     ]
   },
-  "modal-trigger#pop-up-ws": {
-    "children": [
-      "modal-layout#pop-up-ws"
-    ],
-    "props":{
-      "trigger": "load",
-      "blockClass": "modal-ws"
-    }
-  },
-  "modal-layout#pop-up-ws": {
-    "children": [
-      "modal-header#popup",
-      "link#icono-ws-modal"
-    ],
-    "props":{
-      "blockClass": "modal-ws"
-    }
-  },
-  "modal-header#popup":{
-    "props":{
-      "showCloseButton": true,
-      "iconCloseSize": 24,
-      "blockClass": "close-popup"
-    }
-  },
-  "link#icono-ws-modal": {
-    "props": {
-      "href": "https://wa.me/5491124986906",
-      "label": "",
-      "blockClass": "modal-ws"
-    }
-  },
   "list-context.image-list#home": {
-    "children": [
-      "slider-layout#home-images"
-    ],
+    "children": ["slider-layout#home-images"],
     "props": {
       "height": 650,
       "images": [
         {
-          "image": "https://limpioonline.vteximg.com.br/arquivos/1.jpg",
-          "mobileImage": "https://limpioonline.vteximg.com.br/arquivos/1mobile.jpg",
-          "description": "descuentos"
+          "image": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1632140643270-home-sliderdesktop.jpg",
+          "mobileImage": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1632140643270-home-sliderdesktop.jpg",
+          "description": "desc1"
         },
         {
-          "image": "https://limpioonline.vteximg.com.br/arquivos/2.jpg",
-          "mobileImage": "https://limpioonline.vteximg.com.br/arquivos/1mobile.jpg",
-          "description": "descuentos"
+          "image": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1633355296739-home-1-sliderdesktop.jpg",
+          "mobileImage": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1633355296739-home-1-sliderdesktop.jpg",
+          "description": "desc2"
         }
       ]
     }
@@ -104,10 +64,7 @@
     }
   },
   "flex-layout.row#card1": {
-    "children": [
-      "image#card1",
-      "rich-text#card1"
-    ],
+    "children": ["image#card1", "rich-text#card1"],
     "props": {
       "preventHorizontalStretch": false,
       "preventVerticalStretch": true,
@@ -115,30 +72,21 @@
     }
   },
   "flex-layout.row#card2": {
-    "children": [
-      "image#card2",
-      "rich-text#card2"
-    ],
+    "children": ["image#card2", "rich-text#card2"],
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "promotionalInfoCard"
     }
   },
   "flex-layout.row#card3": {
-    "children": [
-      "image#card3",
-      "flex-layout.col#text-card3"
-    ],
+    "children": ["image#card3", "flex-layout.col#text-card3"],
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "promotionalInfoCard"
     }
   },
   "flex-layout.col#card1--mobile": {
-    "children": [
-      "image#card1",
-      "rich-text#card1"
-    ],
+    "children": ["image#card1", "rich-text#card1"],
     "props": {
       "preventHorizontalStretch": false,
       "preventVerticalStretch": true,
@@ -146,20 +94,14 @@
     }
   },
   "flex-layout.col#card2--mobile": {
-    "children": [
-      "image#card2",
-      "rich-text#card2"
-    ],
+    "children": ["image#card2", "rich-text#card2"],
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "promotionalInfoCard"
     }
   },
   "flex-layout.col#card3--mobile": {
-    "children": [
-      "image#card3",
-      "flex-layout.col#text-card3"
-    ],
+    "children": ["image#card3", "flex-layout.col#text-card3"],
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "promotionalInfoCard"
@@ -199,10 +141,7 @@
     }
   },
   "flex-layout.col#text-card3": {
-    "children": [
-      "rich-text#card3-title",
-      "rich-text#card3-paragraph"
-    ],
+    "children": ["rich-text#card3-title", "rich-text#card3-paragraph"],
     "props": {
       "blockClass": "promotionalInfoCard--descuento"
     }
@@ -210,9 +149,7 @@
   "rich-text#card3-title": {
     "props": {
       "text": "[**5% DE DESCUENTO**](#/test)",
-      "blockClass": [
-        "titleCard"
-      ]
+      "blockClass": ["titleCard"]
     }
   },
   "rich-text#card3-paragraph": {
@@ -222,307 +159,9 @@
     }
   },
   "flex-layout.row#banner-home": {
-    "children": [
-      "info-card#home-one",
-      "info-card#home-two"
-    ],
+    "children": ["info-card#home-one", "info-card#home-two"],
     "props": {
-      "blockClass": [
-        "container",
-        "banner-home"
-      ]
-    }
-  },
-  "flex-layout.row#slider-brands": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center" /* 
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true, */,
-      "fullWidth": true,
-      "blockClass": "home-brands"
-    },
-    "children": [
-      "flex-layout.col#banner-brands"
-    ]
-  },
-  "flex-layout.col#banner-brands": {
-    "props": {
-      /*     "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true, */
-      "blockClass": "home-brands"
-    },
-    "children": [
-      "rich-text#home-brands-title",
-      "slider-layout#home-brands"
-    ]
-  },
-  "rich-text#home-brands-title": {
-    "props": {
-      "text": "**Marcas expertas en limpieza y cuidado del hogar**",
-      "font": "t-heading-4",
-      "blockClass": "home-brands-title"
-    }
-  },
-  "slider-layout#home-brands": {
-    "children": [
-      "image#brands-odex",
-      "image#brands-3m",
-      "image#brands-acrylpo",
-      "image#brands-airepur",
-      "image#brands-aktiol",
-      "image#brands-ala",
-      "image#brands-alic",
-      "image#brands-limpio-online",
-      "image#brands-autor",
-      "image#brands-ayudin",
-      "image#brands-baygon",
-      "image#brands-blem",
-      "image#brands-boomjoy",
-      "image#brands-campanita",
-      "image#brands-ceramicol",
-      "image#brands-cif",
-      "image#brands-colombraro",
-      "image#brands-comfort",
-      "image#brands-diversey",
-      "image#brands-doncella",
-      "image#brands-dove",
-      "image#brands-drive",
-      "image#brands-duffy",
-      "image#brands-ecopel",
-      "image#brands-elegante",
-      "image#brands-elite",
-      "image#brands-estrella",
-      "image#brands-fiorentina",
-      "image#brands-fray",
-      "image#brands-giber",
-      "image#brands-glade",
-      "image#brands-higienol",
-      "image#brands-iberia",
-      "image#brands-italimpia",
-      "image#brands-klaro",
-      "image#brands-lesancy",
-      "image#brands-livopen",
-      "image#brands-lux",
-      "image#brands-lysoform",
-      "image#brands-make",
-      "image#brands-mapa",
-      "image#brands-mascardi",
-      "image#brands-maxwipe",
-      "image#brands-mf",
-      "image#brands-mrmusculo",
-      "image#brands-netic",
-      "image#brands-new-scent",
-      "image#brands-off",
-      "image#brands-palmolive",
-      "image#brands-pato",
-      "image#brands-pino-luz",
-      "image#brands-poett",
-      "image#brands-polyana",
-      "image#brands-qsoft",
-      "image#brands-quali-best",
-      "image#brands-querubin",
-      "image#brands-raid",
-      "image#brands-rendipel",
-      "image#brands-rexona",
-      "image#brands-rigel",
-      "image#brands-roquiri",
-      "image#brands-royco",
-      "image#brands-scotch-brite",
-      "image#brands-sedal",
-      "image#brands-selton",
-      "image#brands-simo",
-      "image#brands-skip",
-      "image#brands-sniffy",
-      "image#brands-suiza",
-      "image#brands-sun",
-      "image#brands-sussex",
-      "image#brands-sutter",
-      "image#brands-tempo",
-      "image#brands-topsal",
-      "image#brands-trap",
-      "image#brands-trenet",
-      "image#brands-twister",
-      "image#brands-unilever",
-      "image#brands-vencedor",
-      "image#brands-vim",
-      "image#brands-vivere",
-      "image#brands-wassington",
-      "image#brands-woody",
-      "image#brands-ziploc",
-      "image#brands-schatzi",
-      "image#brands-bandex",
-      "image#brands-campo-claro",
-      "image#brands-eliplast",
-      "image#brands-crudencio",
-      "image#brands-libus"
-    ],
-    "props": {
-      "autoplay": {
-        "timeout": 2000,
-        "stopOnHover": true
-      },
-      "itemsPerPage": {
-        "desktop": 9,
-        "tablet": 3,
-        "phone": 4
-      },
-      "showNavigationArrows": "never",
-      "showPaginationDots": "always",
-      /*      "fullWidth": "true", */
-      "infinite": true,
-      "blockClass": "slider-brands" /* ,
-      "centerMode": "to-the-left" */
-    }
-  },
-  "flex-layout.row#limpio-tips-container-home": {
-    "children": [
-      "flex-layout.col#limpio-tips"
-    ]
-  },
-  "flex-layout.row#limpio-tips-container-home--mobile": {
-    "children": [
-      "flex-layout.col#limpio-tips--mobile"
-    ]
-  },
-  "flex-layout.col#limpio-tips--mobile": {
-    "children": [
-      "flex-layout.row#limpio-tips--mobile",
-      "rich-text#limpio-tips2"
-    ],
-    "props": {
-      "blockClass": "limpioTips--col-container--mobile"
-    }
-  },
-  "flex-layout.col#limpio-tips": {
-    "children": [
-      "flex-layout.row#limpio-tips",
-      "rich-text#limpio-tips2"
-    ],
-    "props": {
-      "blockClass": "limpioTips--col-container"
-    }
-  },
-  "flex-layout.row#limpio-tips--mobile": {
-    "children": [
-      "flex-layout.row#limpio-tips-text--mobile",
-      "image#limpio-tips-image"
-    ],
-    "props": {
-      "blockClass": "limpio-tips-top--mobile",
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true
-    }
-  },
-  "flex-layout.row#limpio-tips-text--mobile":{
-    "children" : [
-      "flex-layout.col#limpio-tips-text"
-    ],
-    "props": {
-      "blockClass": "limpio-tips-text--mobile"
-    }
-  },
-  "flex-layout.row#limpio-tips": {
-    "children": [
-      "flex-layout.col#limpio-tips-text",
-      "image#limpio-tips-image"
-    ],
-    "props": {
-      "blockClass": "limpioTips--container"
-    }
-  },
-  "flex-layout.col#limpio-tips-text": {
-    "children": [
-      "image#limpio-tips",
-      "rich-text#limpio-tips1"
-    ]
-  },
-  "image#limpio-tips": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/home1.png",
-      "link": "#",
-      "blockClass": "limpioTips--textImage"
-    }
-  },
-  "rich-text#limpio-tips1": {
-    "props": {
-      "blockClass": "limpioTips--paragraph",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-    }
-  },
-  "rich-text#limpio-tips2": {
-    "props": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "blockClass": "limpio-tips-text-bajada"
-    }
-  },
-  "image#limpio-tips-image": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/home2.png",
-      "link": "#",
-      "blockClass": "limpioTips-image"
-    }
-  },
-  "flex-layout.col#limpio-tips-product": {},
-  "flex-layout.row#suscribe-banners": {
-    "children": [
-      "flex-layout.col#susbcribe-banners-left",
-      "flex-layout.col#susbcribe-banners-right"
-    ],
-    "props": {
-      "blockClass": "suscribe-banners-home" /* ,
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true */
-    }
-  },
-  "flex-layout.col#susbcribe-banners-left": {
-    "children": [
-      "info-card#suscribe-youtube",
-      "info-card#suscribe-instagram"
-    ],
-    "props": {
-      "blockClass": "suscribe-banners-left",
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "fullWidth": false
-    }
-  },
-  "flex-layout.col#susbcribe-banners-right": {
-    "children": [
-    ]
-  },
-  "flex-layout.row#newsletter": {
-    "children": [
-      "rich-text#newsletter",
-      "newsletter-form"
-    ],
-    "props": {
-      "blockClass": "newsletter",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
-    }
-  },
-  "rich-text#newsletter": {
-    "props": {
-      "text": "Recibí promociones y novedades exclusivas",
-      "blockClass": "newsletterText"
-    }
-  },
-  "newsletter-form": {
-    "children": [
-      "newsletter-input-email",
-      "newsletter-submit"
-    ]
-  },
-  "newsletter-input-email": {
-    "props": {
-      "placeholderText": "Ingresá tu e-mail.."
-    }
-  },
-  "newsletter-submit": {
-    "props": {
-      "submitButtonLabel": "suscribirme"
+      "blockClass": ["container", "banner-home"]
     }
   }
 }

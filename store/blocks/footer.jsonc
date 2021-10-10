@@ -1,21 +1,15 @@
 {
   "footer": {
-    "blocks": [
-      "footer-layout.desktop",
-      "footer-layout.mobile"
-    ]
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footerContainer",
-      "flex-layout.row#logos-footer",
       "flex-layout.row#footer-copyrights"
     ]
   },
   "flex-layout.row#footerContainer": {
-    "children": [
-      "flex-layout.row#footer"
-    ],
+    "children": ["flex-layout.row#footer"],
     "props": {
       "blockClass": "footerContainer"
     }
@@ -23,7 +17,6 @@
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#footerContainer",
-      "flex-layout.row#logos-footer",
       "flex-layout.row#footer-copyrights"
     ]
   },
@@ -31,50 +24,23 @@
     "children": [
       "flex-layout.col#redes",
       "flex-layout.col#about-us",
-      "flex-layout.col#tienda",
-      "flex-layout.col#compra-protegida"
+      "flex-layout.col#tienda"
     ],
     "props": {
       "colGap": 6,
       "blockClass": "footerChildContainer"
     }
   },
-  "flex-layout.row#logos-footer": {
-    "children": [
-      "image#pci-logo",
-      "image#digicert-logo",
-      "image#fiscal-logo",
-      "image#dir-logo",
-      "image#vtex-logo",
-      "image#depic-logo"
-    ],
-    "props": {
-      "blockClass": "footer-marcas-logos"
-    }
-  },
   "flex-layout.col#redes": {
-    "children": [
-      "image#logo",
-      "link#mail",
-      "flex-layout.col#redes-sociales"
-    ],
+    "children": ["link#mail", "flex-layout.col#redes-sociales"],
     "props": {
       "blockClass": "redes-container"
     }
   },
-  "image#logo": {
-    "props": {
-      "width": "9rem",
-      "src": "/",
-      "alt": "instagram",
-      "link": "",
-      "blockClass": "logo-footer"
-    }
-  },
   "link#mail": {
     "props": {
-      "href": "/devoluciones-y-cambios",
-      "label": "contacto@limpionline.com",
+      "href": "/",
+      "label": "",
       "blockClass": "footerLink"
     }
   },
@@ -91,18 +57,11 @@
     "props": {
       "text": "Seguinos en:",
       "font": "t-heading-6",
-      "blockClass": [
-        "footerLink",
-        "redes-sociales-title"
-      ]
+      "blockClass": ["footerLink", "redes-sociales-title"]
     }
   },
   "flex-layout.row#redes-sociales-iconos": {
-    "children": [
-      "image#facebook",
-      "image#instagram",
-      "image#youtube"
-    ],
+    "children": ["image#facebook", "image#instagram"],
     "props": {
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -111,8 +70,8 @@
   },
   "image#facebook": {
     "props": {
-      "width": "1rem",
-      "src": "/",
+      "width": "30px",
+      "src": "https://partnerweek25.vteximg.com.br/arquivos/facebook.png",
       "alt": "facebook",
       "link": "#",
       "blockClass": "social-networks-logo"
@@ -120,26 +79,15 @@
   },
   "image#instagram": {
     "props": {
-      "width": "1rem",
-      "src": "/",
+      "width": "30px",
+      "src": "https://partnerweek25.vteximg.com.br/arquivos/instagram.png",
       "alt": "instagram",
       "link": "#instagram",
       "blockClass": "social-networks-logo"
     }
   },
-  "image#youtube": {
-    "props": {
-      "width": "1rem",
-      "src": "/",
-      "alt": "youtube",
-      "link": "#",
-      "blockClass": "social-networks-logo"
-    }
-  },
   "flex-layout.row#footer-copyrights": {
-    "children": [
-      "rich-text#copyrights"
-    ],
+    "children": ["rich-text#copyrights"],
     "props": {
       "blockClass": "footerCopyrights",
       "verticalAlign": "center"
@@ -147,10 +95,10 @@
   },
   "rich-text#copyrights": {
     "props": {
-      "text": "Copyright 2021 | Todos los derechos reservados Limpionline.com. Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock.",
+      "text": "Copyright 2021 | Todos los derechos reservados partnerweek25. Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock.",
       "blockClass": "footerCopyrightsText",
       "textAlignment": "CENTER",
-    "textPosition": "CENTER"
+      "textPosition": "CENTER"
     }
   },
   "flex-layout.col#about-us": {
@@ -175,53 +123,6 @@
       "link#tienda-7"
     ]
   },
-  "flex-layout.col#compra-protegida": {
-    "children": [
-      "flex-layout.row#compra-protegida-container"
-    ],
-    "props": {
-      "blockClass": "compra-protegida-container"
-    }
-  },
-  "flex-layout.row#compra-protegida-container": {
-    "children": [
-      "image#compra-protegida",
-      "flex-layout.col#compra-protegida-text"
-    ],
-    "props": {
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true
-    }
-  },
-  "image#compra-protegida": {
-    "props": {
-      "width": "13rem",
-      "src": "/",
-      "alt": "facebook"
-    }
-  },
-  "flex-layout.col#compra-protegida-text": {
-    "children": [
-      "rich-text#compra-protegida-title",
-      "rich-text#compra-protegida-paragraph"
-    ],
-    "props": {
-      "preventVerticalStretch": true
-    }
-  },
-  "rich-text#compra-protegida-title": {
-    "props": {
-      "text": "COMPRA PROTEGIDA",
-      "blockClass": "footerTitle",
-      "font": "t-heading-4"
-    }
-  },
-  "rich-text#compra-protegida-paragraph": {
-    "props": {
-      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae excepturi reprehenderit odio illo magnam, laudantium tenetur aspernatur officia consequatur ea alias commodi.",
-      "blockClass": "compra-protegida"
-    }
-  },
   "rich-text#about-us": {
     "props": {
       "text": "SOBRE NOSOTROS",
@@ -236,35 +137,35 @@
   },
   "link#about-us-1": {
     "props": {
-      "href": "/quienes-somos",
+      "href": "",
       "label": "Quiénes somos?",
       "blockClass": "footerLink"
     }
   },
   "link#about-us-2": {
     "props": {
-      "href": "/limpio-tips",
+      "href": "",
       "label": "Limpio Tips",
       "blockClass": "footerLink"
     }
   },
   "link#about-us-4": {
     "props": {
-      "href": "/terminos-y-condiciones",
+      "href": "",
       "label": "Términos y Condiciones",
       "blockClass": "footerLink"
     }
   },
   "link#about-us-6": {
     "props": {
-      "href": "/contacto",
+      "href": "",
       "label": "Contáctenos",
       "blockClass": "footerLink"
     }
   },
   "link#about-us-7": {
     "props": {
-      "href": "/como-comprar",
+      "href": "",
       "label": "Cómo comprar",
       "blockClass": "footerLink"
     }
@@ -285,7 +186,7 @@
   },
   "link#tienda-4": {
     "props": {
-      "href": "/envios",
+      "href": "/",
       "label": "Envíos",
       "blockClass": "footerLink"
     }
@@ -299,21 +200,21 @@
   },
   "link#tienda-3": {
     "props": {
-      "href": "/faq",
+      "href": "/",
       "label": "Preguntas Frecuentes",
       "blockClass": "footerLink"
     }
   },
   "link#tienda-6": {
     "props": {
-      "href": "/boton-devolucion",
+      "href": "/",
       "label": "Botón de devolución",
       "blockClass": "footerLink"
     }
   },
   "link#tienda-7": {
     "props": {
-      "href": "/138?layout=list&map=productClusterIds",
+      "href": "/",
       "label": "Lista de precios",
       "blockClass": "footerLink"
     }
@@ -321,56 +222,8 @@
   "link#arrepentimiento": {
     "props": {
       "label": "SOLICITUD DE DEVOLUCIÓN",
-      "href": "/contacto",
+      "href": "/",
       "blockClass": "boton-arrepentimiento"
-    }
-  },
-  "image#pci-logo": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/pci-logo.png",
-      "alt": "pci logo",
-      "link": "#",
-      "height": "auto"
-    }
-  },
-  "image#digicert-logo": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/digicert-logo.png",
-      "alt": "digicert logo",
-      "link": "#",
-      "height": "auto"
-    }
-  },
-  "image#fiscal-logo": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/dataweb.png",
-      "alt": "fiscal",
-      "link": "#",
-      "height": "auto"
-    }
-  },
-  "image#dir-logo": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/dir-logo.png",
-      "alt": "dir logo",
-      "link": "#",
-      "height": "auto"
-    }
-  },
-  "image#vtex-logo": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/vtex-logo.png",
-      "alt": "vtex logo",
-      "link": "#",
-      "height": "auto"
-    }
-  },
-  "image#depic-logo": {
-    "props": {
-      "src": "https://limpioonline.vteximg.com.br/arquivos/depic-logo.png",
-      "alt": "depic logo",
-      "link": "#",
-      "height": "auto"
     }
   }
 }

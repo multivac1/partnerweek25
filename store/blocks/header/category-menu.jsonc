@@ -8,37 +8,13 @@
       "blockClass": "categories-menu"
     },
     "children": [
-      "menu-item#categorias",
-      "menu-item#menu1",
-      "menu-item#menu2",
-      "menu-item#menu3",
-      "menu-item#menu4",
-      "menu-item#menu5",
-      "menu-item#menu6"
+      "menu-item#categoria1",
+      "menu-item#categoria2",
+      "menu-item#categoria3",
+      "menu-item#categoria4"
     ]
   },
-  "menu-item#categorias": {
-    "blocks": [
-      "submenu#categorias"
-    ],
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": [
-        "header-menu-title",
-        "menu-item-categorias"
-      ],
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": false,
-        "tagTitle": "categorias",
-        "text": "categorias",
-        "highlight": false
-      }
-    }
-  },
-  "menu-item#menu1": {
+  "menu-item#categoria1": {
     "props": {
       "type": "custom",
       "highlight": false,
@@ -52,7 +28,7 @@
       }
     }
   },
-  "menu-item#menu2": {
+  "menu-item#categoria2": {
     "props": {
       "type": "custom",
       "highlight": false,
@@ -66,7 +42,7 @@
       }
     }
   },
-  "menu-item#menu3": {
+  "menu-item#categoria3": {
     "props": {
       "type": "custom",
       "highlight": false,
@@ -80,7 +56,7 @@
       }
     }
   },
-  "menu-item#menu4": {
+  "menu-item#categoria4": {
     "props": {
       "type": "custom",
       "highlight": false,
@@ -91,34 +67,6 @@
         "noFollow": false,
         "tagTitle": "pack ahorrus",
         "text": "pack ahorru$"
-      }
-    }
-  },
-  "menu-item#menu5": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "header-menu-title",
-      "itemProps": {
-        "type": "internal",
-        "href": "/pack_ahorrus",
-        "noFollow": false,
-        "tagTitle": "Prevención Covid",
-        "text": "Prevención Covid"
-      }
-    }
-  },
-  "menu-item#menu6": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "blockClass": "header-menu-title",
-      "itemProps": {
-        "type": "internal",
-        "href": "/limpio-tips",
-        "noFollow": false,
-        "tagTitle": "Limpio Tips",
-        "text": "Limpio Tips"
       }
     }
   }

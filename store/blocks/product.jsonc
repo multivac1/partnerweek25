@@ -4,43 +4,30 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#main",
       "flex-layout.row#details",
-      "shelf.relatedProducts",
-      "flex-layout.row#newsletter"
+      "shelf.relatedProducts"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
     },
-    "children": [
-      "breadcrumb"
-    ]
+    "children": ["breadcrumb"]
   },
   "flex-layout.row#main": {
     "props": {
       "marginTop": 6,
-      "blockClass": [
-        "productContainer",
-        "product-page"
-      ]
+      "blockClass": ["productContainer", "product-page"]
     },
-    "children": [
-      "flex-layout.col#left",
-      "flex-layout.col#right"
-    ]
+    "children": ["flex-layout.col#left", "flex-layout.col#right"]
   },
   "flex-layout.col#left": {
-    "children": [
-      "stack-layout#brand"
-    ],
+    "children": ["stack-layout#brand"],
     "props": {
       "width": "59%"
     }
   },
   "stack-layout#brand": {
-    "children": [
-      "product-images"
-    ]
+    "children": ["product-images"]
   },
   "product-images": {
     "props": {
@@ -80,14 +67,9 @@
     }
   },
   "flex-layout.row#product-price": {
-    "children": [
-      "product-price",
-      "product-price-savings"
-    ],
+    "children": ["product-price", "product-price-savings"],
     "props": {
-      "blockClass": [
-        "PrecioProducto"
-      ],
+      "blockClass": ["PrecioProducto"],
       "preventHorizontalStretch": true
     }
   },
@@ -102,12 +84,8 @@
   },
   "product-price-savings": {
     "props": {
-      "markers": [
-        "highlight"
-      ],
-      "blockClass": [
-        "discount"
-      ],
+      "markers": ["highlight"],
+      "blockClass": ["discount"],
       "message": "-{savingsPercentage}"
     }
   },
@@ -132,9 +110,7 @@
       "imageWidth": "20px",
       "imageHeight": "20px",
       "showValueForVariation": "none",
-      "visibleVariations": [
-        "color"
-      ]
+      "visibleVariations": ["color"]
     }
   },
   "flex-layout.row#icons": {
@@ -148,28 +124,19 @@
     ]
   },
   "flex-layout.col#icons-1": {
-    "children": [
-      "image#product-icon-1",
-      "rich-text#icons-1"
-    ],
+    "children": ["image#product-icon-1", "rich-text#icons-1"],
     "props": {
       "blockClass": "product-page-icons"
     }
   },
   "flex-layout.col#icons-2": {
-    "children": [
-      "image#product-icon-2",
-      "rich-text#icons-2"
-    ],
+    "children": ["image#product-icon-2", "rich-text#icons-2"],
     "props": {
       "blockClass": ["product-page-icons", "product-page-icons-border"]
     }
   },
   "flex-layout.col#icons-3": {
-    "children": [
-      "image#product-icon-3",
-      "rich-text#icons-3"
-    ],
+    "children": ["image#product-icon-3", "rich-text#icons-3"],
     "props": {
       "blockClass": "product-page-icons"
     }
@@ -218,13 +185,11 @@
       "marginTop": 6,
       "blockClass": "product-details"
     },
-    "children": [
-      "flex-layout.col#details-container"
-    ]
+    "children": ["flex-layout.col#details-container"]
   },
   "flex-layout.col#details-container": {
     "children": [
-      "product-description", /* "menu-item#description", */
+      "product-description" /* "menu-item#description", */,
       "flex-layout.col#opinions"
     ],
     "props": {
@@ -246,9 +211,7 @@
     }
   }, */
   "submenu.accordion.product-page#description": {
-    "children": [
-      "product-description"
-    ]
+    "children": ["product-description"]
   },
   "product-description": {
     "props": {
@@ -256,9 +219,7 @@
     }
   },
   "menu-item#product-rating": {
-    "blocks": [
-      "submenu.accordion.product-page#product-rating"
-    ],
+    "blocks": ["submenu.accordion.product-page#product-rating"],
     "props": {
       "id": "test",
       "blockClass": "product-page-menu-item",
@@ -271,15 +232,10 @@
     }
   },
   "submenu.accordion.product-page#product-rating": {
-    "children": [
-      "product-reviews"
-    ]
+    "children": ["product-reviews"]
   },
   "flex-layout.col#opinions": {
-    "children": [
-      "rich-text#opinions",
-      "product-reviews"
-    ]
+    "children": ["rich-text#opinions", "product-reviews"]
   },
   "rich-text#opinions": {
     "props": {
@@ -304,8 +260,6 @@
       "hideUnavailableItems": true,
       "blockClass": "related-product-page"
     },
-    "blocks": [
-      "product-summary.shelf#default"
-    ]
+    "blocks": ["product-summary.shelf#default"]
   }
 }
