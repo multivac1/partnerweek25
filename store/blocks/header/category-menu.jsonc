@@ -11,20 +11,21 @@
       "menu-item#categoria1",
       "menu-item#categoria2",
       "menu-item#categoria3",
-      "menu-item#categoria4"
+      "menu-item#categoria4",
+      "menu-item#categoria5"
     ]
   },
   "menu-item#categoria1": {
     "props": {
       "type": "custom",
       "highlight": false,
-      "blockClass": ["header-menu-title", "ofertas"],
+      "blockClass": "header-menu-title",
       "itemProps": {
         "type": "internal",
-        "href": "/ofertas",
+        "href": "/alimentos-y-bebidas",
         "noFollow": false,
-        "tagTitle": "OFERTAS",
-        "text": "OFERTAS"
+        "tagTitle": "Alimentos y Bebidas",
+        "text": "Alimentos y Bebidas"
       }
     }
   },
@@ -35,10 +36,10 @@
       "blockClass": "header-menu-title",
       "itemProps": {
         "type": "internal",
-        "href": "/limpieza_profesional",
+        "href": "/almacen",
         "noFollow": false,
-        "tagTitle": "limpieza profesional",
-        "text": "limpieza profesional"
+        "tagTitle": "Almacén",
+        "text": "Almacén"
       }
     }
   },
@@ -49,10 +50,10 @@
       "blockClass": "header-menu-title",
       "itemProps": {
         "type": "internal",
-        "href": "/marcas",
+        "href": "/bebes",
         "noFollow": false,
-        "tagTitle": "marcas",
-        "text": "marcas"
+        "tagTitle": "Bebés",
+        "text": "Bebés"
       }
     }
   },
@@ -63,10 +64,24 @@
       "blockClass": "header-menu-title",
       "itemProps": {
         "type": "internal",
-        "href": "/pack_ahorrus",
+        "href": "/mascotas",
         "noFollow": false,
-        "tagTitle": "pack ahorrus",
-        "text": "pack ahorru$"
+        "tagTitle": "Mascotas",
+        "text": "Mascotas"
+      }
+    }
+  },
+  "menu-item#categoria5": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-menu-title",
+      "itemProps": {
+        "type": "internal",
+        "href": "/productos-de-limpieza",
+        "noFollow": false,
+        "tagTitle": "Productos de Limpieza",
+        "text": "Productos de Limpieza"
       }
     }
   }

@@ -43,13 +43,13 @@
       "blockClass": "banner-gallery",
       "images": [
         {
-          "image": "https://limpioonline.vtexassets.com/arquivos/1.jpg",
-          "mobileImage": "https://limpioonline.vteximg.com.br/arquivos/1mobile.jpg",
+          "image": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1632140643270-home-sliderdesktop.jpg",
+          "mobileImage": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1632140643270-home-sliderdesktop.jpg",
           "description": "limpio"
         },
         {
-          "image": "https://limpioonline.vtexassets.com/arquivos/1.jpg",
-          "mobileImage": "https://limpioonline.vteximg.com.br/arquivos/1mobile.jpg",
+          "image": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1633355296739-home-1-sliderdesktop.jpg",
+          "mobileImage": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1633355296739-home-1-sliderdesktop.jpg",
           "description": "limpio"
         }
       ]
